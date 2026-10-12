@@ -1,71 +1,72 @@
-# languages — frequency-first language study
+# Wordhoard
 
-A folder for studying languages using the **frequency-first method** (the "CIA
-method" you described): front-load the highest-frequency vocabulary *and* the
-highest-frequency grammar/sentence patterns, in parallel, then combine them to
-ramp up fast instead of following a textbook from chapter 1.
+**Frequency-first language study.** Build the core of a language fast: learn
+the highest-frequency vocabulary and the highest-frequency grammar patterns in
+parallel, then combine them and start using the language — instead of grinding
+through a textbook from page one.
+
+A *wordhoard* is the Old English kenning for a person's store of words (as in
+*Beowulf*). That store is what this repo is for.
 
 ## The method
 
-Two tracks, run side by side:
+Two tracks run side by side:
 
-1. **Vocabulary track — most frequent words first.**
-   Learn the top slice of the frequency list before anything else. Rough
-   coverage of running text:
+1. **Vocabulary — the most frequent words first.** Front-load the top slice of
+   a frequency list before anything else. Rough coverage of running text:
    - top ~100 words -> ~50%
    - top ~1,000 words -> ~75-80%
    - top ~2,000 words -> ~80-85%
-   Target the **top 5-20%** of the frequency list first (the "core"), not
-   random topic vocabulary.
+   Target the top 5-20% (the core), not random topic vocabulary.
 
-2. **Grammar / pattern track — most frequent patterns first.**
-   Learn the grammar structures and **sentence frames** in frequency order:
-   the handful of patterns that appear in almost every conversation (word
-   order, particles/markers, tense/aspect, question forms, negation,
-   politeness levels, common connectors). Frame-first, not rule-first.
+2. **Grammar / patterns — the most frequent structures first.** Learn the
+   grammar and **sentence frames** in frequency order: word order, particles,
+   tense/aspect, question forms, negation, politeness, connectors.
+   Frame-first, not rule-first.
 
-3. **Combine.**
-   With the core words + core patterns you can already read/listen to real
-   input and start producing. Everything after that is filling gaps and
-   raising coverage, at high speed.
+3. **Combine.** With the core words + core patterns you can read, listen, and
+   start producing right away. Everything after that is filling gaps at speed.
 
-## How the repo is organised
+## Layout
 
 ```
-languages/
+wordhoard/
   README.md            this file — the method
   _template/           scaffold to copy when starting a new language
-  <language>/          one folder per language, e.g. burmese/, thai/, japanese/
+  <language>/          one folder per language, e.g. zh-tw/
 ```
 
-Each language folder follows the same layout (copy `_template/`):
+Each language folder:
 
 ```
 <language>/
   README.md            goal, level, sources, current focus
-  vocab-frequency.md   the ranked word list + progress (% of core covered)
+  vocab-frequency.md   ranked word list + progress
   grammar-patterns.md  ranked grammar patterns / sentence frames + examples
   notes.md             observations, gotchas, mnemonics
-  progress.md          coverage log (words known, patterns known, dates)
+  progress.md          coverage log
   sources.md           where the frequency data came from
 ```
 
+## Languages
+
+| Folder | Language | Status |
+|---|---|---|
+| `zh-tw` | Traditional Chinese (Taiwan) | seed: top ~75 words, 15 core patterns |
+
 ## Working rules
 
-- **Rank first, study second.** Every list in here is ordered by frequency;
-  keep it that way. Add new items at their rank, don't append randomly.
-- **Coverage over count.** Track "% of running text covered" (words) and
-  "patterns seen in the wild", not raw tallies.
-- **Input as soon as the core is up.** Start reading/listening with ~top 1,000
-  words + core patterns, even if imperfect.
-- **One source of truth per language** for the frequency ranking (see
-  `sources.md`), so two lists never disagree silently.
+- **Rank first, study second.** Keep every list ordered by frequency.
+- **Coverage over count.** Track "% of running text covered", not raw tallies.
+- **Input as soon as the core is up** — start reading/listening once the top
+  ~1,000 words and core patterns are there.
+- **One source of truth per language** for the ranking (see each `sources.md`).
 - **No emojis in files.**
 
 ## Starting a new language
 
 1. `cp -r _template <language>`
-2. Fill `sources.md` with a real frequency list (corpus-based, ideally
-   subtitle/conversation data for everyday language).
+2. Fill `sources.md` with a real corpus-based frequency list (subtitle /
+   conversation data is best for everyday language).
 3. Import the top ranks into `vocab-frequency.md` and `grammar-patterns.md`.
 4. Log the first entry in `progress.md`.
