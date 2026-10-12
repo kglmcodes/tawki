@@ -1,0 +1,682 @@
+{
+ "language": "zh-tw",
+ "title": "zh-tw — Traditional Chinese (Taiwan)",
+ "vocab": [
+  {
+   "rank": 1,
+   "word": "的",
+   "pinyin": "de",
+   "meaning": "possessive / modifier particle",
+   "example": "我的書 (my book)"
+  },
+  {
+   "rank": 2,
+   "word": "是",
+   "pinyin": "shì",
+   "meaning": "to be",
+   "example": "我是學生 (I am a student)"
+  },
+  {
+   "rank": 3,
+   "word": "不",
+   "pinyin": "bù",
+   "meaning": "not",
+   "example": "我不知道 (I don't know)"
+  },
+  {
+   "rank": 4,
+   "word": "了",
+   "pinyin": "le",
+   "meaning": "completed-action / change particle",
+   "example": "他走了 (he left)"
+  },
+  {
+   "rank": 5,
+   "word": "在",
+   "pinyin": "zài",
+   "meaning": "at, in, on; to be located",
+   "example": "我在家 (I'm at home)"
+  },
+  {
+   "rank": 6,
+   "word": "一",
+   "pinyin": "yī",
+   "meaning": "one",
+   "example": "一個 (one item)"
+  },
+  {
+   "rank": 7,
+   "word": "人",
+   "pinyin": "rén",
+   "meaning": "person, people",
+   "example": "很多人 (many people)"
+  },
+  {
+   "rank": 8,
+   "word": "有",
+   "pinyin": "yǒu",
+   "meaning": "to have; there is",
+   "example": "我有時間 (I have time)"
+  },
+  {
+   "rank": 9,
+   "word": "我",
+   "pinyin": "wǒ",
+   "meaning": "I, me",
+   "example": "我很好 (I'm fine)"
+  },
+  {
+   "rank": 10,
+   "word": "你",
+   "pinyin": "nǐ",
+   "meaning": "you",
+   "example": "你好 (hello)"
+  },
+  {
+   "rank": 11,
+   "word": "他",
+   "pinyin": "tā",
+   "meaning": "he, him",
+   "example": "他是誰? (who is he?)"
+  },
+  {
+   "rank": 12,
+   "word": "她",
+   "pinyin": "tā",
+   "meaning": "she, her",
+   "example": "她很漂亮 (she is pretty)"
+  },
+  {
+   "rank": 13,
+   "word": "這",
+   "pinyin": "zhè",
+   "meaning": "this",
+   "example": "這是什麼? (what is this?)"
+  },
+  {
+   "rank": 14,
+   "word": "那",
+   "pinyin": "nà",
+   "meaning": "that",
+   "example": "那很好 (that's good)"
+  },
+  {
+   "rank": 15,
+   "word": "個",
+   "pinyin": "gè",
+   "meaning": "general measure word",
+   "example": "一個人 (one person)"
+  },
+  {
+   "rank": 16,
+   "word": "們",
+   "pinyin": "men",
+   "meaning": "plural marker (people)",
+   "example": "我們 (we)"
+  },
+  {
+   "rank": 17,
+   "word": "什麼",
+   "pinyin": "shénme",
+   "meaning": "what",
+   "example": "你在做什麼? (what are you doing?)"
+  },
+  {
+   "rank": 18,
+   "word": "都",
+   "pinyin": "dōu",
+   "meaning": "all, both",
+   "example": "我們都去 (we all go)"
+  },
+  {
+   "rank": 19,
+   "word": "也",
+   "pinyin": "yě",
+   "meaning": "also, too",
+   "example": "我也要 (I want it too)"
+  },
+  {
+   "rank": 20,
+   "word": "就",
+   "pinyin": "jiù",
+   "meaning": "then, right away; just",
+   "example": "我馬上就來 (I'll come right away)"
+  },
+  {
+   "rank": 21,
+   "word": "說",
+   "pinyin": "shuō",
+   "meaning": "to say, speak",
+   "example": "你說什麼? (what did you say?)"
+  },
+  {
+   "rank": 22,
+   "word": "和",
+   "pinyin": "hé",
+   "meaning": "and, with",
+   "example": "你和他 (you and him)"
+  },
+  {
+   "rank": 23,
+   "word": "會",
+   "pinyin": "huì",
+   "meaning": "can; will",
+   "example": "我會說中文 (I can speak Chinese)"
+  },
+  {
+   "rank": 24,
+   "word": "要",
+   "pinyin": "yào",
+   "meaning": "to want; will",
+   "example": "我要這個 (I want this)"
+  },
+  {
+   "rank": 25,
+   "word": "到",
+   "pinyin": "dào",
+   "meaning": "to arrive; to, until",
+   "example": "我到家了 (I got home)"
+  },
+  {
+   "rank": 26,
+   "word": "去",
+   "pinyin": "qù",
+   "meaning": "to go",
+   "example": "你去哪裡? (where are you going?)"
+  },
+  {
+   "rank": 27,
+   "word": "來",
+   "pinyin": "lái",
+   "meaning": "to come",
+   "example": "請過來 (please come over)"
+  },
+  {
+   "rank": 28,
+   "word": "看",
+   "pinyin": "kàn",
+   "meaning": "to look, watch, read",
+   "example": "我在看書 (I'm reading)"
+  },
+  {
+   "rank": 29,
+   "word": "想",
+   "pinyin": "xiǎng",
+   "meaning": "to think; to want",
+   "example": "我想去 (I want to go)"
+  },
+  {
+   "rank": 30,
+   "word": "知道",
+   "pinyin": "zhīdào",
+   "meaning": "to know",
+   "example": "我知道 (I know)"
+  },
+  {
+   "rank": 31,
+   "word": "可以",
+   "pinyin": "kěyǐ",
+   "meaning": "can, may",
+   "example": "可以嗎? (is that OK?)"
+  },
+  {
+   "rank": 32,
+   "word": "好",
+   "pinyin": "hǎo",
+   "meaning": "good; OK",
+   "example": "好的 (OK)"
+  },
+  {
+   "rank": 33,
+   "word": "很",
+   "pinyin": "hěn",
+   "meaning": "very",
+   "example": "很好 (very good)"
+  },
+  {
+   "rank": 34,
+   "word": "大",
+   "pinyin": "dà",
+   "meaning": "big",
+   "example": "很大 (very big)"
+  },
+  {
+   "rank": 35,
+   "word": "小",
+   "pinyin": "xiǎo",
+   "meaning": "small",
+   "example": "很小 (very small)"
+  },
+  {
+   "rank": 36,
+   "word": "多",
+   "pinyin": "duō",
+   "meaning": "many, much",
+   "example": "多少錢? (how much money?)"
+  },
+  {
+   "rank": 37,
+   "word": "少",
+   "pinyin": "shǎo",
+   "meaning": "few, little",
+   "example": "很少 (very few)"
+  },
+  {
+   "rank": 38,
+   "word": "沒有",
+   "pinyin": "méiyǒu",
+   "meaning": "not have; there is not",
+   "example": "我沒有錢 (I have no money)"
+  },
+  {
+   "rank": 39,
+   "word": "因為",
+   "pinyin": "yīnwèi",
+   "meaning": "because",
+   "example": "因為下雨 (because it's raining)"
+  },
+  {
+   "rank": 40,
+   "word": "所以",
+   "pinyin": "suǒyǐ",
+   "meaning": "therefore, so",
+   "example": "所以我不去 (so I'm not going)"
+  },
+  {
+   "rank": 41,
+   "word": "但是",
+   "pinyin": "dànshì",
+   "meaning": "but, however",
+   "example": "但是太貴了 (but it's too expensive)"
+  },
+  {
+   "rank": 42,
+   "word": "如果",
+   "pinyin": "rúguǒ",
+   "meaning": "if",
+   "example": "如果你來 (if you come)"
+  },
+  {
+   "rank": 43,
+   "word": "時候",
+   "pinyin": "shíhòu",
+   "meaning": "time, moment",
+   "example": "什麼時候? (when?)"
+  },
+  {
+   "rank": 44,
+   "word": "現在",
+   "pinyin": "xiànzài",
+   "meaning": "now",
+   "example": "我現在很忙 (I'm busy now)"
+  },
+  {
+   "rank": 45,
+   "word": "誰",
+   "pinyin": "shéi",
+   "meaning": "who",
+   "example": "他是誰? (who is he?)"
+  },
+  {
+   "rank": 46,
+   "word": "哪裡",
+   "pinyin": "nǎlǐ",
+   "meaning": "where",
+   "example": "你在哪裡? (where are you?)"
+  },
+  {
+   "rank": 47,
+   "word": "怎麼",
+   "pinyin": "zěnme",
+   "meaning": "how",
+   "example": "怎麼去? (how do I go?)"
+  },
+  {
+   "rank": 48,
+   "word": "為什麼",
+   "pinyin": "wèishénme",
+   "meaning": "why",
+   "example": "為什麼? (why?)"
+  },
+  {
+   "rank": 49,
+   "word": "幾",
+   "pinyin": "jǐ",
+   "meaning": "how many; several",
+   "example": "幾個人? (how many people?)"
+  },
+  {
+   "rank": 50,
+   "word": "給",
+   "pinyin": "gěi",
+   "meaning": "to give",
+   "example": "給我 (give me)"
+  },
+  {
+   "rank": 51,
+   "word": "讓",
+   "pinyin": "ràng",
+   "meaning": "to let, allow",
+   "example": "讓我看看 (let me see)"
+  },
+  {
+   "rank": 52,
+   "word": "把",
+   "pinyin": "bǎ",
+   "meaning": "object marker (disposal)",
+   "example": "把書給我 (give me the book)"
+  },
+  {
+   "rank": 53,
+   "word": "被",
+   "pinyin": "bèi",
+   "meaning": "by (passive marker)",
+   "example": "被他看到 (seen by him)"
+  },
+  {
+   "rank": 54,
+   "word": "跟",
+   "pinyin": "gēn",
+   "meaning": "with; to follow",
+   "example": "我跟他去 (I go with him)"
+  },
+  {
+   "rank": 55,
+   "word": "從",
+   "pinyin": "cóng",
+   "meaning": "from",
+   "example": "從台北來 (come from Taipei)"
+  },
+  {
+   "rank": 56,
+   "word": "已經",
+   "pinyin": "yǐjīng",
+   "meaning": "already",
+   "example": "我已經吃了 (I already ate)"
+  },
+  {
+   "rank": 57,
+   "word": "還",
+   "pinyin": "hái",
+   "meaning": "still, yet",
+   "example": "還沒 (not yet)"
+  },
+  {
+   "rank": 58,
+   "word": "再",
+   "pinyin": "zài",
+   "meaning": "again",
+   "example": "再見 (goodbye)"
+  },
+  {
+   "rank": 59,
+   "word": "一點",
+   "pinyin": "yīdiǎn",
+   "meaning": "a little",
+   "example": "一點點 (just a little)"
+  },
+  {
+   "rank": 60,
+   "word": "非常",
+   "pinyin": "fēicháng",
+   "meaning": "very, extremely",
+   "example": "非常好 (excellent)"
+  },
+  {
+   "rank": 61,
+   "word": "今天",
+   "pinyin": "jīntiān",
+   "meaning": "today",
+   "example": "今天很熱 (it's hot today)"
+  },
+  {
+   "rank": 62,
+   "word": "明天",
+   "pinyin": "míngtiān",
+   "meaning": "tomorrow",
+   "example": "明天見 (see you tomorrow)"
+  },
+  {
+   "rank": 63,
+   "word": "昨天",
+   "pinyin": "zuótiān",
+   "meaning": "yesterday",
+   "example": "昨天我去了 (I went yesterday)"
+  },
+  {
+   "rank": 64,
+   "word": "時間",
+   "pinyin": "shíjiān",
+   "meaning": "time",
+   "example": "沒有時間 (no time)"
+  },
+  {
+   "rank": 65,
+   "word": "工作",
+   "pinyin": "gōngzuò",
+   "meaning": "work, job",
+   "example": "我在工作 (I'm working)"
+  },
+  {
+   "rank": 66,
+   "word": "朋友",
+   "pinyin": "péngyǒu",
+   "meaning": "friend",
+   "example": "我的朋友 (my friend)"
+  },
+  {
+   "rank": 67,
+   "word": "請",
+   "pinyin": "qǐng",
+   "meaning": "please; to invite",
+   "example": "請進 (please come in)"
+  },
+  {
+   "rank": 68,
+   "word": "謝謝",
+   "pinyin": "xièxie",
+   "meaning": "thanks",
+   "example": "謝謝你 (thank you)"
+  },
+  {
+   "rank": 69,
+   "word": "對不起",
+   "pinyin": "duìbùqǐ",
+   "meaning": "sorry",
+   "example": "對不起 (sorry)"
+  },
+  {
+   "rank": 70,
+   "word": "天氣",
+   "pinyin": "tiānqì",
+   "meaning": "weather",
+   "example": "天氣很好 (the weather is nice)"
+  },
+  {
+   "rank": 71,
+   "word": "吃",
+   "pinyin": "chī",
+   "meaning": "to eat",
+   "example": "吃飯 (eat a meal)"
+  },
+  {
+   "rank": 72,
+   "word": "喝",
+   "pinyin": "hē",
+   "meaning": "to drink",
+   "example": "喝水 (drink water)"
+  },
+  {
+   "rank": 73,
+   "word": "買",
+   "pinyin": "mǎi",
+   "meaning": "to buy",
+   "example": "我要買 (I want to buy)"
+  },
+  {
+   "rank": 74,
+   "word": "錢",
+   "pinyin": "qián",
+   "meaning": "money",
+   "example": "多少錢? (how much?)"
+  },
+  {
+   "rank": 75,
+   "word": "比較",
+   "pinyin": "bǐjiào",
+   "meaning": "relatively; to compare",
+   "example": "比較好 (better)"
+  }
+ ],
+ "patterns": [
+  {
+   "n": 1,
+   "name": "Basic word order (SVO)",
+   "does": "subject-verb-object; the default frame.",
+   "structure": "Subject + Verb + Object",
+   "examples": [
+    "我喜歡咖啡。 (I like coffee.)",
+    "他吃蘋果。 (He eats an apple.)"
+   ]
+  },
+  {
+   "n": 2,
+   "name": "是 (shì) — \"to be\" / identification",
+   "does": "equates two things.",
+   "structure": "A + 是 + B",
+   "examples": [
+    "我是學生。 (I am a student.)",
+    "他是台灣人。 (He is Taiwanese.)"
+   ]
+  },
+  {
+   "n": 3,
+   "name": "的 (de) — possession / modification",
+   "does": "links a modifier to a noun.",
+   "structure": "Owner + 的 + Noun",
+   "examples": [
+    "我的書。 (my book)",
+    "很好的人。 (a very good person)"
+   ]
+  },
+  {
+   "n": 4,
+   "name": "這 / 那 + measure word",
+   "does": "this/that + noun, needs a measure word.",
+   "structure": "這/那 + 量詞 + Noun",
+   "examples": [
+    "這個人。 (this person)",
+    "那本書。 (that book)"
+   ]
+  },
+  {
+   "n": 5,
+   "name": "不 vs 沒 (negation)",
+   "does": "不 negates present/habitual/will; 沒 negates 有 and past/completed.",
+   "structure": "不 + Verb/Adj | 沒(有) + Verb",
+   "examples": [
+    "我不去。 (I'm not going.)",
+    "我沒去。 (I didn't go.)"
+   ]
+  },
+  {
+   "n": 6,
+   "name": "Question forms",
+   "does": "嗎 (yes/no), A-not-A, or a question word left in place.",
+   "structure": "S + V + O + 嗎? | V-不-V? | 什麼/誰/哪裡/怎麼/幾…",
+   "examples": [
+    "你好嗎? (How are you?)",
+    "你去不去? (Are you going?)",
+    "你要什麼? (What do you want?)"
+   ]
+  },
+  {
+   "n": 7,
+   "name": "了 (le) — completion / change",
+   "does": "marks a completed action or a new situation.",
+   "structure": "Verb + 了 (+ Object)",
+   "examples": [
+    "我吃了。 (I ate.)",
+    "下雨了。 (It started raining.)"
+   ]
+  },
+  {
+   "n": 8,
+   "name": "過 (guò) — past experience",
+   "does": "\"have ever done\" something.",
+   "structure": "Verb + 過",
+   "examples": [
+    "我去過日本。 (I've been to Japan.)"
+   ]
+  },
+  {
+   "n": 9,
+   "name": "Location and progress: 在 / 正在",
+   "does": "在 marks location; 正在 (or 在) marks an action in progress.",
+   "structure": "在 + Place | (正)在 + Verb",
+   "examples": [
+    "我在家。 (I'm at home.)",
+    "我正在吃飯。 (I'm eating right now.)"
+   ]
+  },
+  {
+   "n": 10,
+   "name": "把 (bǎ) — disposal / object fronting",
+   "does": "moves the object before the verb, often with a result.",
+   "structure": "把 + Object + Verb (+ result)",
+   "examples": [
+    "把書放在桌上。 (Put the book on the table.)"
+   ]
+  },
+  {
+   "n": 11,
+   "name": "被 (bèi) — passive",
+   "does": "marks the doer in a passive sentence.",
+   "structure": "Object + 被 (+ doer) + Verb",
+   "examples": [
+    "我的錢被偷了。 (My money was stolen.)"
+   ]
+  },
+  {
+   "n": 12,
+   "name": "因為…所以 / 雖然…但是 / 如果…就",
+   "does": "the core connector pairs.",
+   "structure": "",
+   "examples": [
+    "因為下雨，所以我沒去。 (Because it rained, I didn't go.)",
+    "雖然很貴，但是我買了。 (Although it's expensive, I bought it.)",
+    "如果你來，我就去。 (If you come, I'll go.)"
+   ]
+  },
+  {
+   "n": 13,
+   "name": "Modality: 想 / 要 / 會 / 可以 / 應該",
+   "does": "want / intend / can-will / may / should, before the verb.",
+   "structure": "",
+   "examples": [
+    "我想去。 (I want to go.)",
+    "我會說中文。 (I can speak Chinese.)",
+    "你應該休息。 (You should rest.)"
+   ]
+  },
+  {
+   "n": 14,
+   "name": "比 (bǐ) — comparison",
+   "does": "A is more <adj> than B.",
+   "structure": "A + 比 + B + Adj",
+   "examples": [
+    "他比我高。 (He is taller than me.)"
+   ]
+  },
+  {
+   "n": 15,
+   "name": "太…了 (tài … le) — \"too …\"",
+   "does": "excessive degree.",
+   "structure": "",
+   "examples": [
+    "太貴了。 (Too expensive.)",
+    "太好了。 (Great! / Too good.)"
+   ]
+  }
+ ]
+}

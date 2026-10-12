@@ -54,6 +54,29 @@ Each language folder:
 |---|---|---|
 | `zh-tw` | Traditional Chinese (Taiwan) | seed: top ~75 words, 15 core patterns |
 
+## Web app (mobile-first)
+
+A static, offline-capable study app lives in `web/`. It reads JSON generated
+from each language folder's markdown, so the markdown stays the source of
+truth.
+
+Screens:
+- **Browse** — searchable ranked list; tap a card to toggle "known"
+- **Study** — flashcards (word -> reveal pinyin / meaning / example); Know / Again, shuffle, unseen-only
+- **Patterns** — grammar and sentence frames with examples
+- **Progress** — known count, list coverage, band coverage (top 100/300/1000/2000)
+
+Progress is stored per language in the browser (`localStorage`).
+
+```bash
+python3 scripts/build_data.py zh-tw     # markdown -> web/data/zh-tw.json
+python3 -m http.server -d web           # then open http://localhost:8000
+```
+
+Reach it from a phone on the same network, or add to home screen (a web
+manifest is included). `web/data/*.json` is generated but committed so the app
+works when served directly.
+
 ## Working rules
 
 - **Rank first, study second.** Keep every list ordered by frequency.

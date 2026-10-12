@@ -1,0 +1,10 @@
+{
+  "name": "Tawki",
+  "short_name": "Tawki",
+  "description": "Frequency-first language study",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f7f9",
+  "theme_color": "#0f766e",
+  "icons": []
+}
