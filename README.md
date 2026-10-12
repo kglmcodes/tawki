@@ -1,12 +1,12 @@
-# Wordhoard
+# Tawki
 
 **Frequency-first language study.** Build the core of a language fast: learn
 the highest-frequency vocabulary and the highest-frequency grammar patterns in
 parallel, then combine them and start using the language — instead of grinding
 through a textbook from page one.
 
-A *wordhoard* is the Old English kenning for a person's store of words (as in
-*Beowulf*). That store is what this repo is for.
+*Tawki* is this repo's name. It holds the frequency-first core of every language
+you study — the words and patterns worth learning first.
 
 ## The method
 
@@ -30,7 +30,7 @@ Two tracks run side by side:
 ## Layout
 
 ```
-wordhoard/
+tawki/
   README.md            this file — the method
   _template/           scaffold to copy when starting a new language
   <language>/          one folder per language, e.g. zh-tw/
