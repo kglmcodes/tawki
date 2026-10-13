@@ -56,12 +56,13 @@ Each language folder:
 
 ## Web app (mobile-first)
 
-**Live: https://kglmcodes.github.io/tawki/** (deployed from `web/` by GitHub
-Actions; see `.github/workflows/pages.yml`).
-
 A static, offline-capable study app lives in `web/`. It reads JSON generated
 from each language folder's markdown, so the markdown stays the source of
 truth.
+
+The repo is private, so GitHub Pages is off — Pages on a private repo requires
+GitHub Pro. Serve it locally, or deploy `web/` to a host that supports private
+repos on a free tier (Cloudflare Pages / Netlify / Vercel).
 
 Screens:
 - **Browse** — searchable ranked list; tap a card to toggle "known"
