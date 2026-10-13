@@ -56,6 +56,9 @@ Each language folder:
 
 ## Web app (mobile-first)
 
+**Live: https://kglmcodes.github.io/tawki/** (deployed from `web/` by GitHub
+Actions; see `.github/workflows/pages.yml`).
+
 A static, offline-capable study app lives in `web/`. It reads JSON generated
 from each language folder's markdown, so the markdown stays the source of
 truth.
