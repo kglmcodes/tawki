@@ -60,9 +60,9 @@ A static, offline-capable study app lives in `web/`. It reads JSON generated
 from each language folder's markdown, so the markdown stays the source of
 truth.
 
-The repo is private, so GitHub Pages is off — Pages on a private repo requires
-GitHub Pro. Serve it locally, or deploy `web/` to a host that supports private
-repos on a free tier (Cloudflare Pages / Netlify / Vercel).
+The repo is public, so it can be hosted on GitHub Pages. Locally, serve the
+folder directly; or deploy `web/` to GitHub Pages / Cloudflare Pages / Netlify /
+Vercel.
 
 Screens:
 - **Learn** — a Vocabulary | Patterns segmented switch. Vocabulary shows a grid of lessons (20 words each) with per-lesson progress; search filters the full list. Patterns lists the grammar frames and sentence patterns.
