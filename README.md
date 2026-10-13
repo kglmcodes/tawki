@@ -65,9 +65,15 @@ Actions; see `.github/workflows/pages.yml`). Locally, serve the folder directly;
 or deploy `web/` to Cloudflare Pages / Netlify / Vercel instead.
 
 Screens:
-- **Learn** — a Vocabulary | Patterns segmented switch. Vocabulary shows a grid of lessons (20 words each) with per-lesson progress; search filters the full list. Patterns lists the grammar frames and sentence patterns.
-- **Practice** — flashcards scoped to Unseen / All words / a single lesson; tap to reveal pinyin, meaning, example; Know / Again, with shuffle.
-- **Progress** — known count, list coverage, frequency-band coverage (top 100/300/1000/2000), and per-lesson progress.
+- **Learn** — a Vocabulary | Patterns switch. Vocabulary is a lesson grid (20 words each) with per-lesson progress; search filters the full list; each row has audio for the word and its example sentence. Patterns lists the grammar frames.
+- **Practice** — three modes: **Recognize** (word to meaning), **Produce** (meaning to word), **Quiz** (pick the meaning). Scope: Due / All words / a single lesson. Swipe left/right (or arrow keys) to move, tap to reveal, grade **Again / Hard / Good / Easy**.
+- **Progress** — due / new / known counts, list coverage, frequency-band coverage (top 100/300/1000/2000), and per-lesson progress.
+
+**Spaced repetition.** Words are scheduled on a Leitner ladder (boxes 0-5, from 10 minutes to 35 days). Grading moves the box and sets the next due date; a word counts as "known" from box 3. The default scope, **Due**, serves words that are new or due.
+
+**Pronunciation.** Word and example-sentence audio use the browser's speech synthesis (a `zh-TW` voice); nothing is downloaded. With no Chinese voice on the device, the buttons are inert.
+
+**Deep links.** `?lang=zh-tw&scope=lesson:1&mode=quiz` presets the language, scope, and mode.
 
 Progress is stored per language in the browser (`localStorage`).
 

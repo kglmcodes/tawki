@@ -41,26 +41,43 @@
   <!-- PRACTICE -->
   <section id="view-practice" class="view" hidden>
     <div class="toolbar">
-      <select id="scope" aria-label="Practice scope"></select>
-      <button id="study-shuffle" class="chip">Shuffle</button>
+      <select id="scope" aria-label="Scope"></select>
+      <select id="mode" aria-label="Mode">
+        <option value="recognition">Recognize</option>
+        <option value="production">Produce</option>
+        <option value="quiz">Quiz</option>
+      </select>
+      <button id="study-shuffle" class="chip" title="Shuffle">Shuffle</button>
     </div>
     <p id="study-count" class="meta"></p>
+
     <div id="card" class="flashcard">
       <div class="face front">
-        <span id="card-word" class="card-word"></span>
-        <span class="hint">tap to reveal · swipe to move</span>
+        <div class="speakbar" id="front-speak"></div>
+        <span id="front-main" class="card-word"></span>
+        <span id="front-sub" class="card-pinyin"></span>
+        <span class="hint" id="front-hint">tap to reveal</span>
       </div>
       <div class="face back" hidden>
-        <div id="card-pinyin" class="card-pinyin"></div>
-        <div id="card-meaning" class="card-meaning"></div>
-        <div id="card-example" class="card-example"></div>
+        <div id="back-word" class="card-word"></div>
+        <div id="back-pinyin" class="card-pinyin"></div>
+        <div id="back-meaning" class="card-meaning"></div>
+        <div id="back-example" class="card-example"></div>
+        <div class="speakbar" id="back-speak"></div>
       </div>
     </div>
+
+    <div id="quiz-options" class="quiz" hidden></div>
+
     <div id="study-actions" class="study-actions">
-      <button id="btn-again" class="btn ghost">Again</button>
-      <button id="btn-know" class="btn primary">Know</button>
+      <button class="btn ghost g-again" data-grade="again">Again</button>
+      <button class="btn ghost g-hard" data-grade="hard">Hard</button>
+      <button class="btn primary g-good" data-grade="good">Good</button>
+      <button class="btn ghost g-easy" data-grade="easy">Easy</button>
     </div>
-    <p id="study-done" class="meta" hidden>Deck complete. Pick another scope or shuffle.</p>
+    <button id="next-btn" class="btn primary wide" hidden>Next</button>
+
+    <p id="study-done" class="meta" hidden>Deck complete for this scope.</p>
   </section>
 
   <!-- PROGRESS -->
