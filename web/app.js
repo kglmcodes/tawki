@@ -180,7 +180,7 @@ function renderPractice() {
   $("#card").style.visibility = done ? "hidden" : "visible";
   $("#study-actions").style.visibility = done ? "hidden" : "visible";
   $("#study-count").textContent = done ? "0 left"
-    : `${state.deck.length - state.deckPos} left of ${state.deck.length}`;
+    : `${state.deckPos + 1} / ${state.deck.length} · ${state.deck.length - state.deckPos} left`;
   if (done) return;
   $("#card-word").textContent = card.word;
   $("#card-pinyin").textContent = card.pinyin;
@@ -197,6 +197,13 @@ function advance(markKnown) {
   state.deckPos += 1;
   state.flipped = false;
   renderPractice();
+}
+
+function goNext() {
+  if (state.deckPos < state.deck.length) { state.deckPos += 1; state.flipped = false; renderPractice(); }
+}
+function goPrev() {
+  if (state.deckPos > 0) { state.deckPos -= 1; state.flipped = false; renderPractice(); }
 }
 
 function startLesson(n) {
@@ -293,7 +300,31 @@ async function boot() {
     e.currentTarget.setAttribute("aria-pressed", String(state.shuffle));
     buildDeck();
   });
-  $("#card").addEventListener("click", flip);
+  // Flashcard: tap = reveal, horizontal swipe = prev/next, arrows/space on keyboard
+  const card = $("#card");
+  let dragging = false, sx = 0, sy = 0, swiped = false;
+  card.addEventListener("pointerdown", (e) => {
+    dragging = true; sx = e.clientX; sy = e.clientY; swiped = false;
+  });
+  window.addEventListener("pointerup", (e) => {
+    if (!dragging) return;
+    dragging = false;
+    const dx = e.clientX - sx, dy = e.clientY - sy;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+      swiped = true;
+      if (dx < 0) goNext(); else goPrev();
+    }
+  });
+  card.addEventListener("click", () => {
+    if (swiped) { swiped = false; return; }
+    flip();
+  });
+  window.addEventListener("keydown", (e) => {
+    if (state.view !== "practice") return;
+    if (e.key === "ArrowRight") goNext();
+    else if (e.key === "ArrowLeft") goPrev();
+    else if (e.key === " " || e.key === "Enter") { e.preventDefault(); flip(); }
+  });
   $("#btn-again").addEventListener("click", () => advance(false));
   $("#btn-know").addEventListener("click", () => advance(true));
   $("#reset").addEventListener("click", () => {

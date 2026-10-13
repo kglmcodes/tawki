@@ -185,6 +185,9 @@ body {
   text-align: center;
   padding: 24px;
   cursor: pointer;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
 }
 .face { width: 100%; }
 .card-word { font-size: 64px; font-weight: 600; display: block; }
