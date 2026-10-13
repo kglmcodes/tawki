@@ -65,9 +65,11 @@ Actions; see `.github/workflows/pages.yml`). Locally, serve the folder directly;
 or deploy `web/` to Cloudflare Pages / Netlify / Vercel instead.
 
 Screens:
-- **Learn** — a Vocabulary | Patterns switch. Vocabulary is a lesson grid (20 words each) with per-lesson progress; search filters the full list; each row has audio for the word and its example sentence. Patterns lists the grammar frames.
+- **Learn** — a Vocabulary | Zhuyin | Patterns switch. Vocabulary is a lesson grid (20 words each) with per-lesson progress; search filters the full list; each row has audio for the word and its example sentence. Zhuyin is the Bopomofo reference (initials, finals, tones). Patterns lists the grammar frames.
 - **Practice** — three modes: **Recognize** (word to meaning), **Produce** (meaning to word), **Quiz** (pick the meaning). Scope: Due / All words / a single lesson. Swipe left/right (or arrow keys) to move, tap to reveal, grade **Again / Hard / Good / Easy**.
 - **Progress** — due / new / known counts, list coverage, frequency-band coverage (top 100/300/1000/2000), and per-lesson progress.
+
+**Zhuyin (注音符號 / Bopomofo).** Taiwan's phonetic system, shown beside every word. It is derived from the pinyin in `vocab-frequency.md` by `scripts/build_data.py` (a pinyin-to-Zhuyin converter), so it never has to be typed by hand and stays correct as the list grows. The top-bar switch picks **Zhuyin + Pinyin**, **Zhuyin**, or **Pinyin**. Reference: `zh-tw/zhuyin.md`.
 
 **Spaced repetition.** Words are scheduled on a Leitner ladder (boxes 0-5, from 10 minutes to 35 days). Grading moves the box and sets the next due date; a word counts as "known" from box 3. The default scope, **Due**, serves words that are new or due.
 

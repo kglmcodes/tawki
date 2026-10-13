@@ -6,6 +6,7 @@
    "rank": 1,
    "word": "的",
    "pinyin": "de",
+   "zhuyin": "˙ㄉㄜ",
    "meaning": "possessive / modifier particle",
    "example": "我的書 (my book)"
   },
@@ -13,6 +14,7 @@
    "rank": 2,
    "word": "是",
    "pinyin": "shì",
+   "zhuyin": "ㄕˋ",
    "meaning": "to be",
    "example": "我是學生 (I am a student)"
   },
@@ -20,6 +22,7 @@
    "rank": 3,
    "word": "不",
    "pinyin": "bù",
+   "zhuyin": "ㄅㄨˋ",
    "meaning": "not",
    "example": "我不知道 (I don't know)"
   },
@@ -27,6 +30,7 @@
    "rank": 4,
    "word": "了",
    "pinyin": "le",
+   "zhuyin": "˙ㄌㄜ",
    "meaning": "completed-action / change particle",
    "example": "他走了 (he left)"
   },
@@ -34,6 +38,7 @@
    "rank": 5,
    "word": "在",
    "pinyin": "zài",
+   "zhuyin": "ㄗㄞˋ",
    "meaning": "at, in, on; to be located",
    "example": "我在家 (I'm at home)"
   },
@@ -41,6 +46,7 @@
    "rank": 6,
    "word": "一",
    "pinyin": "yī",
+   "zhuyin": "ㄧ",
    "meaning": "one",
    "example": "一個 (one item)"
   },
@@ -48,6 +54,7 @@
    "rank": 7,
    "word": "人",
    "pinyin": "rén",
+   "zhuyin": "ㄖㄣˊ",
    "meaning": "person, people",
    "example": "很多人 (many people)"
   },
@@ -55,6 +62,7 @@
    "rank": 8,
    "word": "有",
    "pinyin": "yǒu",
+   "zhuyin": "ㄧㄡˇ",
    "meaning": "to have; there is",
    "example": "我有時間 (I have time)"
   },
@@ -62,6 +70,7 @@
    "rank": 9,
    "word": "我",
    "pinyin": "wǒ",
+   "zhuyin": "ㄨㄛˇ",
    "meaning": "I, me",
    "example": "我很好 (I'm fine)"
   },
@@ -69,6 +78,7 @@
    "rank": 10,
    "word": "你",
    "pinyin": "nǐ",
+   "zhuyin": "ㄋㄧˇ",
    "meaning": "you",
    "example": "你好 (hello)"
   },
@@ -76,6 +86,7 @@
    "rank": 11,
    "word": "他",
    "pinyin": "tā",
+   "zhuyin": "ㄊㄚ",
    "meaning": "he, him",
    "example": "他是誰? (who is he?)"
   },
@@ -83,6 +94,7 @@
    "rank": 12,
    "word": "她",
    "pinyin": "tā",
+   "zhuyin": "ㄊㄚ",
    "meaning": "she, her",
    "example": "她很漂亮 (she is pretty)"
   },
@@ -90,6 +102,7 @@
    "rank": 13,
    "word": "這",
    "pinyin": "zhè",
+   "zhuyin": "ㄓㄜˋ",
    "meaning": "this",
    "example": "這是什麼? (what is this?)"
   },
@@ -97,6 +110,7 @@
    "rank": 14,
    "word": "那",
    "pinyin": "nà",
+   "zhuyin": "ㄋㄚˋ",
    "meaning": "that",
    "example": "那很好 (that's good)"
   },
@@ -104,6 +118,7 @@
    "rank": 15,
    "word": "個",
    "pinyin": "gè",
+   "zhuyin": "ㄍㄜˋ",
    "meaning": "general measure word",
    "example": "一個人 (one person)"
   },
@@ -111,6 +126,7 @@
    "rank": 16,
    "word": "們",
    "pinyin": "men",
+   "zhuyin": "˙ㄇㄣ",
    "meaning": "plural marker (people)",
    "example": "我們 (we)"
   },
@@ -118,6 +134,7 @@
    "rank": 17,
    "word": "什麼",
    "pinyin": "shénme",
+   "zhuyin": "ㄕㄣˊ ˙ㄇㄜ",
    "meaning": "what",
    "example": "你在做什麼? (what are you doing?)"
   },
@@ -125,6 +142,7 @@
    "rank": 18,
    "word": "都",
    "pinyin": "dōu",
+   "zhuyin": "ㄉㄡ",
    "meaning": "all, both",
    "example": "我們都去 (we all go)"
   },
@@ -132,6 +150,7 @@
    "rank": 19,
    "word": "也",
    "pinyin": "yě",
+   "zhuyin": "ㄧㄝˇ",
    "meaning": "also, too",
    "example": "我也要 (I want it too)"
   },
@@ -139,6 +158,7 @@
    "rank": 20,
    "word": "就",
    "pinyin": "jiù",
+   "zhuyin": "ㄐㄧㄡˋ",
    "meaning": "then, right away; just",
    "example": "我馬上就來 (I'll come right away)"
   },
@@ -146,6 +166,7 @@
    "rank": 21,
    "word": "說",
    "pinyin": "shuō",
+   "zhuyin": "ㄕㄨㄛ",
    "meaning": "to say, speak",
    "example": "你說什麼? (what did you say?)"
   },
@@ -153,6 +174,7 @@
    "rank": 22,
    "word": "和",
    "pinyin": "hé",
+   "zhuyin": "ㄏㄜˊ",
    "meaning": "and, with",
    "example": "你和他 (you and him)"
   },
@@ -160,6 +182,7 @@
    "rank": 23,
    "word": "會",
    "pinyin": "huì",
+   "zhuyin": "ㄏㄨㄟˋ",
    "meaning": "can; will",
    "example": "我會說中文 (I can speak Chinese)"
   },
@@ -167,6 +190,7 @@
    "rank": 24,
    "word": "要",
    "pinyin": "yào",
+   "zhuyin": "ㄧㄠˋ",
    "meaning": "to want; will",
    "example": "我要這個 (I want this)"
   },
@@ -174,6 +198,7 @@
    "rank": 25,
    "word": "到",
    "pinyin": "dào",
+   "zhuyin": "ㄉㄠˋ",
    "meaning": "to arrive; to, until",
    "example": "我到家了 (I got home)"
   },
@@ -181,6 +206,7 @@
    "rank": 26,
    "word": "去",
    "pinyin": "qù",
+   "zhuyin": "ㄑㄩˋ",
    "meaning": "to go",
    "example": "你去哪裡? (where are you going?)"
   },
@@ -188,6 +214,7 @@
    "rank": 27,
    "word": "來",
    "pinyin": "lái",
+   "zhuyin": "ㄌㄞˊ",
    "meaning": "to come",
    "example": "請過來 (please come over)"
   },
@@ -195,6 +222,7 @@
    "rank": 28,
    "word": "看",
    "pinyin": "kàn",
+   "zhuyin": "ㄎㄢˋ",
    "meaning": "to look, watch, read",
    "example": "我在看書 (I'm reading)"
   },
@@ -202,6 +230,7 @@
    "rank": 29,
    "word": "想",
    "pinyin": "xiǎng",
+   "zhuyin": "ㄒㄧㄤˇ",
    "meaning": "to think; to want",
    "example": "我想去 (I want to go)"
   },
@@ -209,6 +238,7 @@
    "rank": 30,
    "word": "知道",
    "pinyin": "zhīdào",
+   "zhuyin": "ㄓ ㄉㄠˋ",
    "meaning": "to know",
    "example": "我知道 (I know)"
   },
@@ -216,6 +246,7 @@
    "rank": 31,
    "word": "可以",
    "pinyin": "kěyǐ",
+   "zhuyin": "ㄎㄜˇ ㄧˇ",
    "meaning": "can, may",
    "example": "可以嗎? (is that OK?)"
   },
@@ -223,6 +254,7 @@
    "rank": 32,
    "word": "好",
    "pinyin": "hǎo",
+   "zhuyin": "ㄏㄠˇ",
    "meaning": "good; OK",
    "example": "好的 (OK)"
   },
@@ -230,6 +262,7 @@
    "rank": 33,
    "word": "很",
    "pinyin": "hěn",
+   "zhuyin": "ㄏㄣˇ",
    "meaning": "very",
    "example": "很好 (very good)"
   },
@@ -237,6 +270,7 @@
    "rank": 34,
    "word": "大",
    "pinyin": "dà",
+   "zhuyin": "ㄉㄚˋ",
    "meaning": "big",
    "example": "很大 (very big)"
   },
@@ -244,6 +278,7 @@
    "rank": 35,
    "word": "小",
    "pinyin": "xiǎo",
+   "zhuyin": "ㄒㄧㄠˇ",
    "meaning": "small",
    "example": "很小 (very small)"
   },
@@ -251,6 +286,7 @@
    "rank": 36,
    "word": "多",
    "pinyin": "duō",
+   "zhuyin": "ㄉㄨㄛ",
    "meaning": "many, much",
    "example": "多少錢? (how much money?)"
   },
@@ -258,6 +294,7 @@
    "rank": 37,
    "word": "少",
    "pinyin": "shǎo",
+   "zhuyin": "ㄕㄠˇ",
    "meaning": "few, little",
    "example": "很少 (very few)"
   },
@@ -265,6 +302,7 @@
    "rank": 38,
    "word": "沒有",
    "pinyin": "méiyǒu",
+   "zhuyin": "ㄇㄟˊ ㄧㄡˇ",
    "meaning": "not have; there is not",
    "example": "我沒有錢 (I have no money)"
   },
@@ -272,6 +310,7 @@
    "rank": 39,
    "word": "因為",
    "pinyin": "yīnwèi",
+   "zhuyin": "ㄧㄣ ㄨㄟˋ",
    "meaning": "because",
    "example": "因為下雨 (because it's raining)"
   },
@@ -279,6 +318,7 @@
    "rank": 40,
    "word": "所以",
    "pinyin": "suǒyǐ",
+   "zhuyin": "ㄙㄨㄛˇ ㄧˇ",
    "meaning": "therefore, so",
    "example": "所以我不去 (so I'm not going)"
   },
@@ -286,6 +326,7 @@
    "rank": 41,
    "word": "但是",
    "pinyin": "dànshì",
+   "zhuyin": "ㄉㄢˋ ㄕˋ",
    "meaning": "but, however",
    "example": "但是太貴了 (but it's too expensive)"
   },
@@ -293,6 +334,7 @@
    "rank": 42,
    "word": "如果",
    "pinyin": "rúguǒ",
+   "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ",
    "meaning": "if",
    "example": "如果你來 (if you come)"
   },
@@ -300,6 +342,7 @@
    "rank": 43,
    "word": "時候",
    "pinyin": "shíhòu",
+   "zhuyin": "ㄕˊ ㄏㄡˋ",
    "meaning": "time, moment",
    "example": "什麼時候? (when?)"
   },
@@ -307,6 +350,7 @@
    "rank": 44,
    "word": "現在",
    "pinyin": "xiànzài",
+   "zhuyin": "ㄒㄧㄢˋ ㄗㄞˋ",
    "meaning": "now",
    "example": "我現在很忙 (I'm busy now)"
   },
@@ -314,6 +358,7 @@
    "rank": 45,
    "word": "誰",
    "pinyin": "shéi",
+   "zhuyin": "ㄕㄟˊ",
    "meaning": "who",
    "example": "他是誰? (who is he?)"
   },
@@ -321,6 +366,7 @@
    "rank": 46,
    "word": "哪裡",
    "pinyin": "nǎlǐ",
+   "zhuyin": "ㄋㄚˇ ㄌㄧˇ",
    "meaning": "where",
    "example": "你在哪裡? (where are you?)"
   },
@@ -328,6 +374,7 @@
    "rank": 47,
    "word": "怎麼",
    "pinyin": "zěnme",
+   "zhuyin": "ㄗㄣˇ ˙ㄇㄜ",
    "meaning": "how",
    "example": "怎麼去? (how do I go?)"
   },
@@ -335,6 +382,7 @@
    "rank": 48,
    "word": "為什麼",
    "pinyin": "wèishénme",
+   "zhuyin": "ㄨㄟˋ ㄕㄣˊ ˙ㄇㄜ",
    "meaning": "why",
    "example": "為什麼? (why?)"
   },
@@ -342,6 +390,7 @@
    "rank": 49,
    "word": "幾",
    "pinyin": "jǐ",
+   "zhuyin": "ㄐㄧˇ",
    "meaning": "how many; several",
    "example": "幾個人? (how many people?)"
   },
@@ -349,6 +398,7 @@
    "rank": 50,
    "word": "給",
    "pinyin": "gěi",
+   "zhuyin": "ㄍㄟˇ",
    "meaning": "to give",
    "example": "給我 (give me)"
   },
@@ -356,6 +406,7 @@
    "rank": 51,
    "word": "讓",
    "pinyin": "ràng",
+   "zhuyin": "ㄖㄤˋ",
    "meaning": "to let, allow",
    "example": "讓我看看 (let me see)"
   },
@@ -363,6 +414,7 @@
    "rank": 52,
    "word": "把",
    "pinyin": "bǎ",
+   "zhuyin": "ㄅㄚˇ",
    "meaning": "object marker (disposal)",
    "example": "把書給我 (give me the book)"
   },
@@ -370,6 +422,7 @@
    "rank": 53,
    "word": "被",
    "pinyin": "bèi",
+   "zhuyin": "ㄅㄟˋ",
    "meaning": "by (passive marker)",
    "example": "被他看到 (seen by him)"
   },
@@ -377,6 +430,7 @@
    "rank": 54,
    "word": "跟",
    "pinyin": "gēn",
+   "zhuyin": "ㄍㄣ",
    "meaning": "with; to follow",
    "example": "我跟他去 (I go with him)"
   },
@@ -384,6 +438,7 @@
    "rank": 55,
    "word": "從",
    "pinyin": "cóng",
+   "zhuyin": "ㄘㄨㄥˊ",
    "meaning": "from",
    "example": "從台北來 (come from Taipei)"
   },
@@ -391,6 +446,7 @@
    "rank": 56,
    "word": "已經",
    "pinyin": "yǐjīng",
+   "zhuyin": "ㄧˇ ㄐㄧㄥ",
    "meaning": "already",
    "example": "我已經吃了 (I already ate)"
   },
@@ -398,6 +454,7 @@
    "rank": 57,
    "word": "還",
    "pinyin": "hái",
+   "zhuyin": "ㄏㄞˊ",
    "meaning": "still, yet",
    "example": "還沒 (not yet)"
   },
@@ -405,6 +462,7 @@
    "rank": 58,
    "word": "再",
    "pinyin": "zài",
+   "zhuyin": "ㄗㄞˋ",
    "meaning": "again",
    "example": "再見 (goodbye)"
   },
@@ -412,6 +470,7 @@
    "rank": 59,
    "word": "一點",
    "pinyin": "yīdiǎn",
+   "zhuyin": "ㄧ ㄉㄧㄢˇ",
    "meaning": "a little",
    "example": "一點點 (just a little)"
   },
@@ -419,6 +478,7 @@
    "rank": 60,
    "word": "非常",
    "pinyin": "fēicháng",
+   "zhuyin": "ㄈㄟ ㄔㄤˊ",
    "meaning": "very, extremely",
    "example": "非常好 (excellent)"
   },
@@ -426,6 +486,7 @@
    "rank": 61,
    "word": "今天",
    "pinyin": "jīntiān",
+   "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ",
    "meaning": "today",
    "example": "今天很熱 (it's hot today)"
   },
@@ -433,6 +494,7 @@
    "rank": 62,
    "word": "明天",
    "pinyin": "míngtiān",
+   "zhuyin": "ㄇㄧㄥˊ ㄊㄧㄢ",
    "meaning": "tomorrow",
    "example": "明天見 (see you tomorrow)"
   },
@@ -440,6 +502,7 @@
    "rank": 63,
    "word": "昨天",
    "pinyin": "zuótiān",
+   "zhuyin": "ㄗㄨㄛˊ ㄊㄧㄢ",
    "meaning": "yesterday",
    "example": "昨天我去了 (I went yesterday)"
   },
@@ -447,6 +510,7 @@
    "rank": 64,
    "word": "時間",
    "pinyin": "shíjiān",
+   "zhuyin": "ㄕˊ ㄐㄧㄢ",
    "meaning": "time",
    "example": "沒有時間 (no time)"
   },
@@ -454,6 +518,7 @@
    "rank": 65,
    "word": "工作",
    "pinyin": "gōngzuò",
+   "zhuyin": "ㄍㄨㄥ ㄗㄨㄛˋ",
    "meaning": "work, job",
    "example": "我在工作 (I'm working)"
   },
@@ -461,6 +526,7 @@
    "rank": 66,
    "word": "朋友",
    "pinyin": "péngyǒu",
+   "zhuyin": "ㄆㄥˊ ㄧㄡˇ",
    "meaning": "friend",
    "example": "我的朋友 (my friend)"
   },
@@ -468,6 +534,7 @@
    "rank": 67,
    "word": "請",
    "pinyin": "qǐng",
+   "zhuyin": "ㄑㄧㄥˇ",
    "meaning": "please; to invite",
    "example": "請進 (please come in)"
   },
@@ -475,13 +542,15 @@
    "rank": 68,
    "word": "謝謝",
    "pinyin": "xièxie",
+   "zhuyin": "ㄒㄧㄝˋ ˙ㄒㄧㄝ",
    "meaning": "thanks",
    "example": "謝謝你 (thank you)"
   },
   {
    "rank": 69,
    "word": "對不起",
-   "pinyin": "duìbùqǐ",
+   "pinyin": "duìbuqǐ",
+   "zhuyin": "ㄉㄨㄟˋ ˙ㄅㄨ ㄑㄧˇ",
    "meaning": "sorry",
    "example": "對不起 (sorry)"
   },
@@ -489,6 +558,7 @@
    "rank": 70,
    "word": "天氣",
    "pinyin": "tiānqì",
+   "zhuyin": "ㄊㄧㄢ ㄑㄧˋ",
    "meaning": "weather",
    "example": "天氣很好 (the weather is nice)"
   },
@@ -496,6 +566,7 @@
    "rank": 71,
    "word": "吃",
    "pinyin": "chī",
+   "zhuyin": "ㄔ",
    "meaning": "to eat",
    "example": "吃飯 (eat a meal)"
   },
@@ -503,6 +574,7 @@
    "rank": 72,
    "word": "喝",
    "pinyin": "hē",
+   "zhuyin": "ㄏㄜ",
    "meaning": "to drink",
    "example": "喝水 (drink water)"
   },
@@ -510,6 +582,7 @@
    "rank": 73,
    "word": "買",
    "pinyin": "mǎi",
+   "zhuyin": "ㄇㄞˇ",
    "meaning": "to buy",
    "example": "我要買 (I want to buy)"
   },
@@ -517,6 +590,7 @@
    "rank": 74,
    "word": "錢",
    "pinyin": "qián",
+   "zhuyin": "ㄑㄧㄢˊ",
    "meaning": "money",
    "example": "多少錢? (how much?)"
   },
@@ -524,6 +598,7 @@
    "rank": 75,
    "word": "比較",
    "pinyin": "bǐjiào",
+   "zhuyin": "ㄅㄧˇ ㄐㄧㄠˋ",
    "meaning": "relatively; to compare",
    "example": "比較好 (better)"
   }
@@ -676,6 +751,245 @@
    "examples": [
     "太貴了。 (Too expensive.)",
     "太好了。 (Great! / Too good.)"
+   ]
+  }
+ ],
+ "zhuyin": [
+  {
+   "name": "Initials (聲母) — 21",
+   "symbols": [
+    {
+     "symbol": "ㄅ",
+     "pinyin": "b",
+     "note": ""
+    },
+    {
+     "symbol": "ㄆ",
+     "pinyin": "p",
+     "note": ""
+    },
+    {
+     "symbol": "ㄇ",
+     "pinyin": "m",
+     "note": ""
+    },
+    {
+     "symbol": "ㄈ",
+     "pinyin": "f",
+     "note": ""
+    },
+    {
+     "symbol": "ㄉ",
+     "pinyin": "d",
+     "note": ""
+    },
+    {
+     "symbol": "ㄊ",
+     "pinyin": "t",
+     "note": ""
+    },
+    {
+     "symbol": "ㄋ",
+     "pinyin": "n",
+     "note": ""
+    },
+    {
+     "symbol": "ㄌ",
+     "pinyin": "l",
+     "note": ""
+    },
+    {
+     "symbol": "ㄍ",
+     "pinyin": "g",
+     "note": ""
+    },
+    {
+     "symbol": "ㄎ",
+     "pinyin": "k",
+     "note": ""
+    },
+    {
+     "symbol": "ㄏ",
+     "pinyin": "h",
+     "note": ""
+    },
+    {
+     "symbol": "ㄐ",
+     "pinyin": "j",
+     "note": ""
+    },
+    {
+     "symbol": "ㄑ",
+     "pinyin": "q",
+     "note": ""
+    },
+    {
+     "symbol": "ㄒ",
+     "pinyin": "x",
+     "note": ""
+    },
+    {
+     "symbol": "ㄓ",
+     "pinyin": "zh",
+     "note": ""
+    },
+    {
+     "symbol": "ㄔ",
+     "pinyin": "ch",
+     "note": ""
+    },
+    {
+     "symbol": "ㄕ",
+     "pinyin": "sh",
+     "note": ""
+    },
+    {
+     "symbol": "ㄖ",
+     "pinyin": "r",
+     "note": ""
+    },
+    {
+     "symbol": "ㄗ",
+     "pinyin": "z",
+     "note": ""
+    },
+    {
+     "symbol": "ㄘ",
+     "pinyin": "c",
+     "note": ""
+    },
+    {
+     "symbol": "ㄙ",
+     "pinyin": "s",
+     "note": ""
+    }
+   ],
+   "bullets": []
+  },
+  {
+   "name": "Finals (韻母) — 16",
+   "symbols": [
+    {
+     "symbol": "ㄚ",
+     "pinyin": "a",
+     "note": ""
+    },
+    {
+     "symbol": "ㄛ",
+     "pinyin": "o",
+     "note": ""
+    },
+    {
+     "symbol": "ㄜ",
+     "pinyin": "e",
+     "note": ""
+    },
+    {
+     "symbol": "ㄝ",
+     "pinyin": "ê",
+     "note": ""
+    },
+    {
+     "symbol": "ㄞ",
+     "pinyin": "ai",
+     "note": ""
+    },
+    {
+     "symbol": "ㄟ",
+     "pinyin": "ei",
+     "note": ""
+    },
+    {
+     "symbol": "ㄠ",
+     "pinyin": "ao",
+     "note": ""
+    },
+    {
+     "symbol": "ㄡ",
+     "pinyin": "ou",
+     "note": ""
+    },
+    {
+     "symbol": "ㄢ",
+     "pinyin": "an",
+     "note": ""
+    },
+    {
+     "symbol": "ㄣ",
+     "pinyin": "en",
+     "note": ""
+    },
+    {
+     "symbol": "ㄤ",
+     "pinyin": "ang",
+     "note": ""
+    },
+    {
+     "symbol": "ㄥ",
+     "pinyin": "eng",
+     "note": ""
+    },
+    {
+     "symbol": "ㄦ",
+     "pinyin": "er",
+     "note": ""
+    },
+    {
+     "symbol": "ㄧ",
+     "pinyin": "i",
+     "note": "also the medial in ya/ye/yi"
+    },
+    {
+     "symbol": "ㄨ",
+     "pinyin": "u",
+     "note": "also the medial in wa/wo/wu"
+    },
+    {
+     "symbol": "ㄩ",
+     "pinyin": "ü",
+     "note": "written u in j/q/x syllables (ju, qu, xu)"
+    }
+   ],
+   "bullets": []
+  },
+  {
+   "name": "Tones (聲調) — 5",
+   "symbols": [
+    {
+     "symbol": "ˉ",
+     "pinyin": "first",
+     "note": "high and flat (usually written with no mark)"
+    },
+    {
+     "symbol": "ˊ",
+     "pinyin": "second",
+     "note": "rising"
+    },
+    {
+     "symbol": "ˇ",
+     "pinyin": "third",
+     "note": "falling then rising"
+    },
+    {
+     "symbol": "ˋ",
+     "pinyin": "fourth",
+     "note": "falling"
+    },
+    {
+     "symbol": "˙",
+     "pinyin": "neutral",
+     "note": "light and short; written *before* the syllable"
+    }
+   ],
+   "bullets": []
+  },
+  {
+   "name": "Notes",
+   "symbols": [],
+   "bullets": [
+    "Buzzing vowel: after ㄓㄔㄕㄖㄗㄘㄙ the vowel is written as part of the",
+    "j/q/x + ㄩ: pinyin writes `-u` (ju, qu, xu) but the sound is ü: ㄐㄩ, ㄑㄩ,",
+    "Neutral tone goes in front: 的 = ˙ㄉㄜ, 謝謝 = ㄒㄧㄝˋ ˙ㄒㄧㄝ."
    ]
   }
  ]

@@ -20,6 +20,7 @@ const state = {
   hideKnown: false,
   scope: "due",         // "due" | "all" | "lesson:<n>"
   mode: "recognition",  // "recognition" | "production" | "quiz"
+  notation: "both",     // "both" | "zhuyin" | "pinyin"
   shuffle: false,
   deck: [],
   deckPos: 0,
@@ -51,6 +52,19 @@ function load(lang) {
 }
 function save() {
   localStorage.setItem(key(state.lang), JSON.stringify({ sched: state.sched }));
+}
+
+/* ---------- notation (Zhuyin / Pinyin / both) ---------- */
+const NOTATION_KEY = "tawki:notation";
+function loadNotation() {
+  const v = localStorage.getItem(NOTATION_KEY);
+  if (v === "zhuyin" || v === "pinyin" || v === "both") state.notation = v;
+}
+function applyNotation() {
+  document.body.classList.toggle("only-zhuyin", state.notation === "zhuyin");
+  document.body.classList.toggle("only-pinyin", state.notation === "pinyin");
+  const sel = $("#notation");
+  if (sel) sel.value = state.notation;
 }
 const schedOf = (rank) => state.sched[rank];
 const isKnown = (rank) => (schedOf(rank)?.b ?? -1) >= KNOWN_BOX;
@@ -160,6 +174,7 @@ function vocabCard(v) {
     <span class="rank">${v.rank}</span>
     <div class="vocab-main">
       <div><span class="${wordClass(v.word)}">${esc(v.word)}</span>
+        <span class="zhuyin">${esc(v.zhuyin)}</span>
         <span class="pinyin">${esc(v.pinyin)}</span></div>
       <div>${esc(v.meaning)}</div>
       <div class="example">${esc(v.example)}</div>
@@ -264,9 +279,11 @@ function renderPractice() {
     $("#front-hint").textContent = "tap to reveal";
   }
   fillSpeakbar($("#front-speak"), [{ text: card.word, label: "Word" }]);
+  $("#front-zhuyin").textContent = card.zhuyin;
   $("#front-hint").hidden = quiz;
 
   $("#back-word").textContent = card.word;
+  $("#back-zhuyin").textContent = card.zhuyin;
   $("#back-pinyin").textContent = card.pinyin;
   $("#back-meaning").textContent = card.meaning;
   $("#back-example").textContent = card.example;
@@ -395,13 +412,38 @@ function showView(name) {
   for (const v of VIEWS) $(`#view-${v}`).hidden = v !== name;
   if (name === "practice") buildDeck();
   if (name === "progress") renderProgress();
-  if (name === "learn") { renderLearnVocab(); renderPatterns(); }
+  if (name === "learn") { renderLearnVocab(); renderPatterns(); renderLearnZhuyin(); }
 }
 function setLearnTab(tab) {
   state.learnTab = tab;
   for (const s of $$(".seg")) s.classList.toggle("is-active", s.dataset.learn === tab);
   $("#learn-vocab").hidden = tab !== "vocab";
+  $("#learn-zhuyin").hidden = tab !== "zhuyin";
   $("#learn-patterns").hidden = tab !== "patterns";
+  if (tab === "zhuyin") renderLearnZhuyin();
+}
+
+function renderLearnZhuyin() {
+  const el = $("#zhuyin-ref");
+  const groups = state.data.zhuyin || [];
+  if (!groups.length) {
+    el.innerHTML = `<p class="meta">No Zhuyin reference for this language.</p>`;
+    return;
+  }
+  el.innerHTML = groups.map((g) => {
+    const grid = g.symbols.length
+      ? `<div class="zh-grid">${g.symbols.map((s) => `
+          <div class="zh-cell">
+            <span class="zh-sym">${esc(s.symbol)}</span>
+            <span class="zh-pin">${esc(s.pinyin)}</span>
+            ${s.note ? `<span class="zh-note">${esc(s.note)}</span>` : ""}
+          </div>`).join("")}</div>`
+      : "";
+    const bullets = g.bullets.length
+      ? `<ul class="zh-bullets">${g.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>`
+      : "";
+    return `<h2 class="section">${esc(g.name)}</h2>${grid}${bullets}`;
+  }).join("");
 }
 
 /* ---------- Boot ---------- */
@@ -426,9 +468,12 @@ async function fetchJSON(url) {
 async function boot() {
   pickVoice();
   if ("speechSynthesis" in window) speechSynthesis.onvoiceschanged = pickVoice;
+  loadNotation();
+  applyNotation();
 
   const index = await fetchJSON("data/index.json").catch(() => null);
-  const langs = (index && index.languages) || ["zh-tw"];
+  const langs = ((index && index.languages) || ["zh-tw"]).filter((l) => l !== "index");
+  if (!langs.length) langs.push("zh-tw");
   const sel = $("#lang");
   sel.innerHTML = langs.map((l) => `<option value="${l}">${l}</option>`).join("");
   sel.addEventListener("change", () => setLang(sel.value).then(() => showView("learn")));
@@ -445,6 +490,11 @@ async function boot() {
   const deep = Boolean(pScope || pMode);
 
   for (const s of $$(".seg")) s.addEventListener("click", () => setLearnTab(s.dataset.learn));
+  $("#notation").addEventListener("change", (e) => {
+    state.notation = e.target.value;
+    localStorage.setItem(NOTATION_KEY, state.notation);
+    applyNotation();
+  });
   $("#search").addEventListener("input", (e) => { state.query = e.target.value; renderLearnVocab(); });
   $("#hide-known").addEventListener("click", (e) => {
     state.hideKnown = !state.hideKnown;

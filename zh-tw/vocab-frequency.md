@@ -88,7 +88,7 @@ noted only in `notes.md` — keep this file Traditional-only.
 | 66 | 朋友 | péngyǒu | friend | 我的朋友 (my friend) | [ ] |
 | 67 | 請 | qǐng | please; to invite | 請進 (please come in) | [ ] |
 | 68 | 謝謝 | xièxie | thanks | 謝謝你 (thank you) | [ ] |
-| 69 | 對不起 | duìbùqǐ | sorry | 對不起 (sorry) | [ ] |
+| 69 | 對不起 | duìbuqǐ | sorry | 對不起 (sorry) | [ ] |
 | 70 | 天氣 | tiānqì | weather | 天氣很好 (the weather is nice) | [ ] |
 | 71 | 吃 | chī | to eat | 吃飯 (eat a meal) | [ ] |
 | 72 | 喝 | hē | to drink | 喝水 (drink water) | [ ] |

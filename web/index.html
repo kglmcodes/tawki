@@ -12,7 +12,14 @@
 <body>
 <header class="topbar">
   <div class="brand">Tawki</div>
-  <select id="lang" aria-label="Language"></select>
+  <div class="topbar-controls">
+    <select id="notation" aria-label="Notation">
+      <option value="both">注音 + Pinyin</option>
+      <option value="zhuyin">Zhuyin</option>
+      <option value="pinyin">Pinyin</option>
+    </select>
+    <select id="lang" aria-label="Language"></select>
+  </div>
 </header>
 
 <main id="app">
@@ -20,6 +27,7 @@
   <section id="view-learn" class="view">
     <div class="segmented" role="tablist" aria-label="Theory">
       <button class="seg is-active" data-learn="vocab" role="tab">Vocabulary</button>
+      <button class="seg" data-learn="zhuyin" role="tab">Zhuyin</button>
       <button class="seg" data-learn="patterns" role="tab">Patterns</button>
     </div>
 
@@ -31,6 +39,10 @@
       <div id="lesson-grid" class="lesson-grid"></div>
       <ul id="vocab-list" class="cards" hidden></ul>
       <p id="browse-meta" class="meta"></p>
+    </div>
+
+    <div id="learn-zhuyin" hidden>
+      <div id="zhuyin-ref"></div>
     </div>
 
     <div id="learn-patterns" hidden>
@@ -55,12 +67,14 @@
       <div class="face front">
         <div class="speakbar" id="front-speak"></div>
         <span id="front-main" class="card-word"></span>
-        <span id="front-sub" class="card-pinyin"></span>
+        <span id="front-zhuyin" class="card-zhuyin zhuyin"></span>
+        <span id="front-sub" class="card-pinyin pinyin"></span>
         <span class="hint" id="front-hint">tap to reveal</span>
       </div>
       <div class="face back" hidden>
         <div id="back-word" class="card-word"></div>
-        <div id="back-pinyin" class="card-pinyin"></div>
+        <div id="back-zhuyin" class="card-zhuyin zhuyin"></div>
+        <div id="back-pinyin" class="card-pinyin pinyin"></div>
         <div id="back-meaning" class="card-meaning"></div>
         <div id="back-example" class="card-example"></div>
         <div class="speakbar" id="back-speak"></div>
