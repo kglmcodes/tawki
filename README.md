@@ -65,10 +65,9 @@ GitHub Pro. Serve it locally, or deploy `web/` to a host that supports private
 repos on a free tier (Cloudflare Pages / Netlify / Vercel).
 
 Screens:
-- **Browse** — searchable ranked list; tap a card to toggle "known"
-- **Study** — flashcards (word -> reveal pinyin / meaning / example); Know / Again, shuffle, unseen-only
-- **Patterns** — grammar and sentence frames with examples
-- **Progress** — known count, list coverage, band coverage (top 100/300/1000/2000)
+- **Learn** — a Vocabulary | Patterns segmented switch. Vocabulary shows a grid of lessons (20 words each) with per-lesson progress; search filters the full list. Patterns lists the grammar frames and sentence patterns.
+- **Practice** — flashcards scoped to Unseen / All words / a single lesson; tap to reveal pinyin, meaning, example; Know / Again, with shuffle.
+- **Progress** — known count, list coverage, frequency-band coverage (top 100/300/1000/2000), and per-lesson progress.
 
 Progress is stored per language in the browser (`localStorage`).
 

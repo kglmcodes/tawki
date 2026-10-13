@@ -16,18 +16,32 @@
 </header>
 
 <main id="app">
-  <section id="view-browse" class="view">
-    <div class="toolbar">
-      <input id="search" type="search" inputmode="search" placeholder="Search word, pinyin, meaning">
-      <button id="hide-known" class="chip" aria-pressed="false">Hide known</button>
+  <!-- LEARN -->
+  <section id="view-learn" class="view">
+    <div class="segmented" role="tablist" aria-label="Theory">
+      <button class="seg is-active" data-learn="vocab" role="tab">Vocabulary</button>
+      <button class="seg" data-learn="patterns" role="tab">Patterns</button>
     </div>
-    <p id="browse-meta" class="meta"></p>
-    <ul id="vocab-list" class="cards"></ul>
+
+    <div id="learn-vocab">
+      <div class="toolbar">
+        <input id="search" type="search" inputmode="search" placeholder="Search word, pinyin, meaning">
+        <button id="hide-known" class="chip" aria-pressed="false">Hide known</button>
+      </div>
+      <div id="lesson-grid" class="lesson-grid"></div>
+      <ul id="vocab-list" class="cards" hidden></ul>
+      <p id="browse-meta" class="meta"></p>
+    </div>
+
+    <div id="learn-patterns" hidden>
+      <ul id="pattern-list" class="cards"></ul>
+    </div>
   </section>
 
-  <section id="view-study" class="view" hidden>
+  <!-- PRACTICE -->
+  <section id="view-practice" class="view" hidden>
     <div class="toolbar">
-      <button id="study-scope" class="chip" aria-pressed="true">Unseen only</button>
+      <select id="scope" aria-label="Practice scope"></select>
       <button id="study-shuffle" class="chip">Shuffle</button>
     </div>
     <p id="study-count" class="meta"></p>
@@ -46,23 +60,19 @@
       <button id="btn-again" class="btn ghost">Again</button>
       <button id="btn-know" class="btn primary">Know</button>
     </div>
-    <p id="study-done" class="meta" hidden>Deck complete. Shuffle or switch to Unseen only to keep going.</p>
+    <p id="study-done" class="meta" hidden>Deck complete. Pick another scope or shuffle.</p>
   </section>
 
-  <section id="view-patterns" class="view" hidden>
-    <ul id="pattern-list" class="cards"></ul>
-  </section>
-
+  <!-- PROGRESS -->
   <section id="view-progress" class="view" hidden>
     <div id="progress"></div>
-    <button id="reset" class="btn ghost danger">Reset progress</button>
+    <button id="reset" class="btn ghost danger wide">Reset progress</button>
   </section>
 </main>
 
 <nav class="tabbar" role="tablist">
-  <button class="tab is-active" data-tab="browse">Browse</button>
-  <button class="tab" data-tab="study">Study</button>
-  <button class="tab" data-tab="patterns">Patterns</button>
+  <button class="tab is-active" data-tab="learn">Learn</button>
+  <button class="tab" data-tab="practice">Practice</button>
   <button class="tab" data-tab="progress">Progress</button>
 </nav>
 
