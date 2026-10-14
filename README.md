@@ -73,6 +73,8 @@ Screens:
 
 **Tone colours.** Both the pinyin and the Zhuyin are coloured by tone — 1st red, 2nd orange, 3rd green, 4th blue, neutral grey — from per-syllable tone data emitted by the build script.
 
+**Reading on the hidden side.** A Practice toggle (**Reading: shown / hidden**) controls whether the transcription appears before you reveal. It is always hidden in **Produce** mode, where the reading would give the answer away.
+
 **Spaced repetition.** Words are scheduled on a Leitner ladder (boxes 0-5, from 10 minutes to 35 days). Grading moves the box and sets the next due date; a word counts as "known" from box 3. The default scope, **Due**, serves words that are new or due.
 
 **Pronunciation.** Word and example-sentence audio use the browser's speech synthesis (a `zh-TW` voice); nothing is downloaded. With no Chinese voice on the device, the buttons are inert.

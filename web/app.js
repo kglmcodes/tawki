@@ -21,6 +21,7 @@ const state = {
   scope: "due",         // "due" | "all" | "lesson:<n>"
   mode: "recognition",  // "recognition" | "production" | "quiz"
   notation: "both",     // "both" | "zhuyin" | "pinyin"
+  frontPron: "show",    // "show" | "hide" — reading on the hidden side
   shuffle: false,
   deck: [],
   deckPos: 0,
@@ -69,6 +70,20 @@ function applyNotation() {
   document.body.classList.toggle("only-pinyin", state.notation === "pinyin");
   const sel = $("#notation");
   if (sel) sel.value = state.notation;
+}
+
+/* ---------- reading on the hidden (front) side ---------- */
+const FRONT_PRON_KEY = "tawki:front-pron";
+function loadFrontPron() {
+  const v = localStorage.getItem(FRONT_PRON_KEY);
+  if (v === "show" || v === "hide") state.frontPron = v;
+}
+function applyFrontPron() {
+  const btn = $("#front-pron");
+  if (!btn) return;
+  const shown = state.frontPron === "show";
+  btn.setAttribute("aria-pressed", String(shown));
+  btn.textContent = shown ? "Reading: shown" : "Reading: hidden";
 }
 
 /* ---------- progress backup (export / import) ---------- */
@@ -324,6 +339,10 @@ function renderPractice() {
   }
   fillSpeakbar($("#front-speak"), [{ text: card.word, label: "Word" }]);
   $("#front-zhuyin").innerHTML = toneHTML(card.zhuyinParts, " ") || esc(card.zhuyin);
+  // Reading on the hidden side: user choice, but never in Produce (it is the answer)
+  const showFrontPron = state.mode !== "production" && state.frontPron === "show";
+  $("#front-zhuyin").hidden = !showFrontPron;
+  $("#front-sub").hidden = !showFrontPron;
   $("#front-hint").hidden = quiz;
 
   $("#back-word").textContent = card.word;
@@ -514,6 +533,8 @@ async function boot() {
   if ("speechSynthesis" in window) speechSynthesis.onvoiceschanged = pickVoice;
   loadNotation();
   applyNotation();
+  loadFrontPron();
+  applyFrontPron();
 
   // Offline support (http/https only)
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
@@ -552,6 +573,12 @@ async function boot() {
   });
   $("#scope").addEventListener("change", (e) => { state.scope = e.target.value; state.deckPos = 0; state.flipped = false; state.quizPicked = null; buildDeck(); });
   $("#mode").addEventListener("change", (e) => { state.mode = e.target.value; state.flipped = false; state.quizPicked = null; renderPractice(); });
+  $("#front-pron").addEventListener("click", () => {
+    state.frontPron = state.frontPron === "show" ? "hide" : "show";
+    localStorage.setItem(FRONT_PRON_KEY, state.frontPron);
+    applyFrontPron();
+    renderPractice();
+  });
   $("#study-shuffle").addEventListener("click", (e) => {
     state.shuffle = !state.shuffle;
     e.currentTarget.setAttribute("aria-pressed", String(state.shuffle));
