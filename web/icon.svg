@@ -6,6 +6,11 @@
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="15" fill="url(#tawki)"/>
+  <!-- TK, set into the tile behind the wave -->
+  <path d="M13 19 H35 M24 19 V47 M45 19 V47 M57 19 L45 33 M45 33 L57 47"
+        fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"
+        stroke-linejoin="round" opacity="0.18"/>
+  <!-- the wave -->
   <g fill="#ffffff">
     <rect x="5.5"  y="24" width="5" height="16" rx="2.5"/>
     <rect x="13.5" y="16" width="5" height="32" rx="2.5"/>
