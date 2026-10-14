@@ -61,12 +61,15 @@ from each language folder's markdown, so the markdown stays the source of
 truth.
 
 **Live: https://kglmcodes.github.io/tawki/** (deployed from `web/` by GitHub
-Actions; see `.github/workflows/pages.yml`). Locally, serve the folder directly;
-or deploy `web/` to Cloudflare Pages / Netlify / Vercel instead.
+Actions; see `.github/workflows/pages.yml`). The workflow runs `build_data.py`
+and `node --check` before deploying, and stamps the commit SHA into the service
+worker's cache name so installed clients always pick up the new build. Locally,
+serve the folder directly; or deploy `web/` to Cloudflare Pages / Netlify /
+Vercel instead.
 
 Screens:
-- **Learn** — a Vocabulary | Zhuyin | Patterns switch. Vocabulary is a lesson grid (20 words each) with per-lesson progress; search filters the full list; each row has audio for the word and its example sentence. Zhuyin is the Bopomofo reference (initials, finals, tones). Patterns lists the grammar frames.
-- **Practice** — three modes: **Recognize** (word to meaning), **Produce** (meaning to word), **Quiz** (pick the meaning). Scope: Due / All words / a single lesson. Swipe left/right (or arrow keys) to move, tap to reveal, grade **Again / Hard / Good / Easy**.
+- **Learn** — a Vocabulary | Zhuyin | Patterns switch. Vocabulary is a lesson grid (20 words each) with per-lesson progress; search filters the list and **All words** shows the whole ranked list without searching; each row has audio for the word and its example sentence. Zhuyin is the Bopomofo reference (initials, finals, tones) with the tone legend, and each symbol is tappable to hear it. Patterns lists the grammar frames.
+- **Practice** — three modes: **Recognize** (word to meaning), **Produce** (meaning to word), **Quiz** (pick the meaning). Scope: Due / All words / a single lesson. Tap **Reveal** first; the grades then show the interval each choice leads to (**Again / Hard / Good / Easy**), and **Again** re-queues the card later in the same session. Swipe left/right (or arrow keys) to move.
 - **Progress** — due / new / known counts, list coverage, frequency-band coverage (top 100/300/1000/2000), and per-lesson progress.
 
 **Zhuyin (注音符號 / Bopomofo).** Taiwan's phonetic system, shown beside every word. It is derived from the pinyin in `vocab-frequency.md` by `scripts/build_data.py` (a pinyin-to-Zhuyin converter), so it never has to be typed by hand and stays correct as the list grows. The top-bar switch picks **Zhuyin + Pinyin**, **Zhuyin**, or **Pinyin**. Reference: `zh-tw/zhuyin.md`.

@@ -7,6 +7,8 @@
 
 const LESSON_SIZE = 20;
 const BOX_MINUTES = [10, 24 * 60, 3 * 24 * 60, 7 * 24 * 60, 16 * 24 * 60, 35 * 24 * 60];
+const BOX_LABELS = ["10m", "1d", "3d", "7d", "16d", "35d"];
+const GRADE_TITLE = { again: "Again", hard: "Hard", good: "Good", easy: "Easy" };
 const KNOWN_BOX = 3;
 const SPK = `<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2-3.74v7.48A4.5 4.5 0 0 0 16.5 12z"/></svg>`;
 
@@ -17,6 +19,7 @@ const state = {
   view: "learn",
   learnTab: "vocab",
   query: "",
+  showAll: false,
   hideKnown: false,
   scope: "due",         // "due" | "all" | "lesson:<n>"
   mode: "recognition",  // "recognition" | "production" | "quiz"
@@ -129,12 +132,17 @@ const schedOf = (rank) => state.sched[rank];
 const isKnown = (rank) => (schedOf(rank)?.b ?? -1) >= KNOWN_BOX;
 const isDue = (rank) => { const s = schedOf(rank); return !s || s.d <= Date.now(); };
 const isNew = (rank) => !schedOf(rank);
+function nextBox(curB, g) {
+  if (g === "again") return 0;
+  if (g === "hard") return cap(curB ?? 0, 0, 5);
+  if (g === "good") return cap((curB ?? 0) + 1, 0, 5);
+  if (g === "easy") return cap((curB ?? 0) + 2, 0, 5);
+  return cap(curB ?? 0, 0, 5);
+}
 function grade(rank, g) {
   const s = schedOf(rank) || { b: 0, d: 0, r: 0, l: 0 };
-  if (g === "again") { s.b = 0; s.l = (s.l || 0) + 1; }
-  else if (g === "hard") { s.b = cap(s.b ?? 0, 0, 5); }
-  else if (g === "good") { s.b = cap((s.b ?? 0) + 1, 0, 5); }
-  else if (g === "easy") { s.b = cap((s.b ?? 0) + 2, 0, 5); }
+  s.b = nextBox(s.b, g);
+  if (g === "again") s.l = (s.l || 0) + 1;
   s.r = (s.r || 0) + 1;
   s.d = Date.now() + BOX_MINUTES[s.b] * 60000;
   state.sched[rank] = s;
@@ -194,15 +202,15 @@ function renderLearnVocab() {
   const meta = $("#browse-meta");
   const q = state.query.trim().toLowerCase();
 
-  if (q) {
+  if (q || state.showAll) {
     grid.hidden = true;
     list.hidden = false;
     const items = state.data.vocab.filter((v) =>
       !(state.hideKnown && isKnown(v.rank)) &&
-      (v.word + " " + v.pinyin + " " + v.meaning).toLowerCase().includes(q));
+      (!q || (v.word + " " + v.pinyin + " " + v.meaning).toLowerCase().includes(q)));
     list.innerHTML = "";
     for (const v of items) list.appendChild(vocabCard(v));
-    meta.textContent = `${items.length} match · ${state.sched ? Object.keys(state.sched).length : 0} tracked`;
+    meta.textContent = `${items.length} ${q ? "match" : "shown"} · ${knownIn(state.data.vocab)}/${state.data.vocab.length} known`;
     return;
   }
 
@@ -312,21 +320,32 @@ function renderPractice() {
   const card = currentCard();
   const done = !card;
   const quiz = state.mode === "quiz";
+  const prod = state.mode === "production";
 
+  $("#front-pron").hidden = prod;
   $("#study-done").hidden = !done;
   $("#card").style.visibility = done ? "hidden" : "visible";
   $("#study-count").textContent = done
     ? (state.scope === "due" ? "Nothing due right now." : "0 left")
     : `${state.deckPos + 1} / ${state.deck.length} · mode: ${state.mode}`;
 
-  // actions
-  $("#study-actions").hidden = done || quiz;
+  // actions: show Reveal before flipping, grade buttons only after reveal
+  $("#reveal-btn").hidden = done || quiz || state.flipped;
+  $("#study-actions").hidden = done || quiz || !state.flipped;
   $("#next-btn").hidden = !(quiz && state.quizPicked);
   $("#quiz-options").hidden = !(quiz && !done);
   if (done) return;
 
+  // label each grade button with the resulting interval for this card
+  const curB = schedOf(card.rank)?.b ?? 0;
+  for (const g of $$("#study-actions .btn")) {
+    const gr = g.dataset.grade;
+    const iv = BOX_LABELS[nextBox(curB, gr)];
+    g.innerHTML = `${GRADE_TITLE[gr]}<span class="g-iv">${iv}</span>`;
+  }
+
   const front = card.word;
-  if (state.mode === "production") {
+  if (prod) {
     $("#front-main").className = "card-prompt";
     $("#front-main").textContent = card.meaning;
     $("#front-sub").textContent = "";
@@ -337,10 +356,11 @@ function renderPractice() {
     $("#front-sub").innerHTML = toneHTML(card.pinyinParts, "") || esc(card.pinyin);
     $("#front-hint").textContent = "tap to reveal";
   }
-  fillSpeakbar($("#front-speak"), [{ text: card.word, label: "Word" }]);
+  // Never put the answer's audio on the hidden side of Produce mode
+  fillSpeakbar($("#front-speak"), prod ? [] : [{ text: card.word, label: "Word" }]);
   $("#front-zhuyin").innerHTML = toneHTML(card.zhuyinParts, " ") || esc(card.zhuyin);
   // Reading on the hidden side: user choice, but never in Produce (it is the answer)
-  const showFrontPron = state.mode !== "production" && state.frontPron === "show";
+  const showFrontPron = !prod && state.frontPron === "show";
   $("#front-zhuyin").hidden = !showFrontPron;
   $("#front-sub").hidden = !showFrontPron;
   $("#front-hint").hidden = quiz;
@@ -416,7 +436,10 @@ function flip() {
 }
 function advance(g) {
   const c = currentCard();
-  if (c && g) grade(c.rank, g);
+  if (c && g) {
+    grade(c.rank, g);
+    if (g === "again") state.deck.push(c);
+  }
   state.deckPos += 1;
   state.flipped = false;
   state.quizPicked = null;
@@ -496,17 +519,29 @@ function renderLearnZhuyin() {
   el.innerHTML = groups.map((g) => {
     const grid = g.symbols.length
       ? `<div class="zh-grid">${g.symbols.map((s) => `
-          <div class="zh-cell">
+          <button type="button" class="zh-cell" data-speak="${esc(s.symbol)}" title="Tap to pronounce">
             <span class="zh-sym">${esc(s.symbol)}</span>
             <span class="zh-pin">${esc(s.pinyin)}</span>
             ${s.note ? `<span class="zh-note">${esc(s.note)}</span>` : ""}
-          </div>`).join("")}</div>`
+          </button>`).join("")}</div>`
+      : "";
+    const legend = /tone/i.test(g.name)
+      ? `<div class="tone-legend">
+          <span class="tn t1">1st red</span>
+          <span class="tn t2">2nd orange</span>
+          <span class="tn t3">3rd green</span>
+          <span class="tn t4">4th blue</span>
+          <span class="tn t5">neutral grey</span>
+        </div>`
       : "";
     const bullets = g.bullets.length
       ? `<ul class="zh-bullets">${g.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>`
       : "";
-    return `<h2 class="section">${esc(g.name)}</h2>${grid}${bullets}`;
+    return `<h2 class="section">${esc(g.name)}</h2>${grid}${legend}${bullets}`;
   }).join("");
+  for (const b of el.querySelectorAll(".zh-cell")) {
+    b.addEventListener("click", () => speak(b.dataset.speak));
+  }
 }
 
 /* ---------- Boot ---------- */
@@ -566,6 +601,11 @@ async function boot() {
     applyNotation();
   });
   $("#search").addEventListener("input", (e) => { state.query = e.target.value; renderLearnVocab(); });
+  $("#show-all").addEventListener("click", (e) => {
+    state.showAll = !state.showAll;
+    e.currentTarget.setAttribute("aria-pressed", String(state.showAll));
+    renderLearnVocab();
+  });
   $("#hide-known").addEventListener("click", (e) => {
     state.hideKnown = !state.hideKnown;
     e.currentTarget.setAttribute("aria-pressed", String(state.hideKnown));
@@ -584,6 +624,7 @@ async function boot() {
     e.currentTarget.setAttribute("aria-pressed", String(state.shuffle));
     buildDeck();
   });
+  $("#reveal-btn").addEventListener("click", flip);
   for (const g of $$("#study-actions .btn")) g.addEventListener("click", () => advance(g.dataset.grade));
   $("#next-btn").addEventListener("click", () => advance(null));
 

@@ -201,10 +201,13 @@ body {
 .hint { display: block; margin-top: 16px; color: var(--muted); font-size: 13px; }
 
 .study-actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 14px; }
-.study-actions .btn { padding: 12px 6px; font-size: 14px; }
+.study-actions .btn { padding: 10px 6px; font-size: 14px; line-height: 1.2; }
+.study-actions .g-iv { display: block; font-size: 11px; font-weight: 500; opacity: .75; margin-top: 2px; }
 
 /* Buttons */
 .btn {
+  display: inline-block;
+  text-align: center;
   font: inherit;
   font-weight: 600;
   border-radius: 12px;
@@ -217,7 +220,7 @@ body {
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .btn.ghost { background: transparent; }
 .btn.danger { color: var(--danger); border-color: color-mix(in srgb, var(--danger) 40%, var(--line)); }
-.btn.wide { width: 100%; margin-top: 16px; }
+.btn.wide { display: block; width: 100%; margin-top: 16px; }
 
 /* Patterns */
 .pattern-head { display: flex; gap: 10px; align-items: baseline; }
@@ -303,12 +306,17 @@ body.only-pinyin .zhuyin { display: none; }
 /* Zhuyin reference */
 .zh-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px; }
 .zh-cell {
+  font: inherit;
+  color: inherit;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 10px 8px;
   text-align: center;
+  cursor: pointer;
 }
+.zh-cell:active { background: var(--accent-soft); }
+.tone-legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 13px; margin: 10px 0 4px; font-weight: 600; }
 .zh-sym { display: block; font-size: 30px; font-weight: 600; }
 .zh-pin { display: block; color: var(--accent); font-size: 13px; margin-top: 2px; }
 .zh-note { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; }

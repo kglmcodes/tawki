@@ -50,6 +50,7 @@
     <div id="learn-vocab">
       <div class="toolbar">
         <input id="search" type="search" inputmode="search" placeholder="Search word, pinyin, meaning">
+        <button id="show-all" class="chip" aria-pressed="false">All words</button>
         <button id="hide-known" class="chip" aria-pressed="false">Hide known</button>
       </div>
       <div id="lesson-grid" class="lesson-grid"></div>
@@ -100,7 +101,9 @@
 
     <div id="quiz-options" class="quiz" hidden></div>
 
-    <div id="study-actions" class="study-actions">
+    <button id="reveal-btn" class="btn primary wide" hidden>Reveal</button>
+
+    <div id="study-actions" class="study-actions" hidden>
       <button class="btn ghost g-again" data-grade="again">Again</button>
       <button class="btn ghost g-hard" data-grade="hard">Hard</button>
       <button class="btn primary g-good" data-grade="good">Good</button>
