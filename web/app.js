@@ -66,6 +66,46 @@ function applyNotation() {
   const sel = $("#notation");
   if (sel) sel.value = state.notation;
 }
+
+/* ---------- progress backup (export / import) ---------- */
+function exportProgress() {
+  const data = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith("tawki:")) data[k] = localStorage.getItem(k);
+  }
+  const payload = { app: "tawki", exported: new Date().toISOString(), data };
+  const blob = new Blob([JSON.stringify(payload, null, 1)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `tawki-progress-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(a.href);
+}
+
+function importProgress(file) {
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const parsed = JSON.parse(reader.result);
+      const data = parsed.data || parsed;
+      let n = 0;
+      for (const [k, v] of Object.entries(data)) {
+        if (k.startsWith("tawki:")) {
+          localStorage.setItem(k, typeof v === "string" ? v : JSON.stringify(v));
+          n += 1;
+        }
+      }
+      alert(`Imported ${n} entries. Reloading.`);
+      location.reload();
+    } catch {
+      alert("That file could not be read as a Tawki progress export.");
+    }
+  };
+  reader.readAsText(file);
+}
 const schedOf = (rank) => state.sched[rank];
 const isKnown = (rank) => (schedOf(rank)?.b ?? -1) >= KNOWN_BOX;
 const isDue = (rank) => { const s = schedOf(rank); return !s || s.d <= Date.now(); };
@@ -471,6 +511,11 @@ async function boot() {
   loadNotation();
   applyNotation();
 
+  // Offline support (http/https only)
+  if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  }
+
   const index = await fetchJSON("data/index.json").catch(() => null);
   const langs = ((index && index.languages) || ["zh-tw"]).filter((l) => l !== "index");
   if (!langs.length) langs.push("zh-tw");
@@ -540,6 +585,11 @@ async function boot() {
     renderProgress();
     buildScopeOptions();
     buildDeck();
+  });
+  $("#export-progress").addEventListener("click", exportProgress);
+  $("#import-file").addEventListener("change", (e) => {
+    const file = e.target.files && e.target.files[0];
+    if (file) importProgress(file);
   });
   for (const t of $$(".tab")) t.addEventListener("click", () => showView(t.dataset.tab));
 

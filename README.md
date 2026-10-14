@@ -79,6 +79,10 @@ Screens:
 
 Progress is stored per language in the browser (`localStorage`).
 
+**Offline & installable.** A service worker (`web/sw.js`) caches the app shell and the language data, so after the first visit it works offline and installs to the home screen. Navigations and data are network-first (updates land when online); styles, scripts, and icons are cache-first.
+
+**Backup.** Progress lives in `localStorage`. **Export progress** writes a `tawki-progress-<date>.json`; **Import progress** restores one — use it to move between devices, or to recover after clearing browser data.
+
 ```bash
 python3 scripts/build_data.py zh-tw     # markdown -> web/data/zh-tw.json
 python3 -m http.server -d web           # then open http://localhost:8000
