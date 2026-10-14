@@ -127,28 +127,42 @@ def zhuyin_syllable(syl: str, tone: int) -> str:
     return z + TONE_MARK.get(tone, "")
 
 
-def pinyin_to_zhuyin(py: str) -> str:
-    """Convert a tone-marked pinyin word (maybe several syllables) to Zhuyin."""
+def syllable_parts(py: str):
+    """Split tone-marked pinyin into syllables; returns [{py, zh, tone}].
+
+    tone: 1-4, or 5 for neutral. Positions align 1:1 with the base string, so
+    the original pinyin can be sliced back out.
+    """
     if not py:
-        return ""
-    tone_at, chars = {}, []
+        return []
+    tone_at, chars, orig = {}, [], []
     for ch in py:
+        if ch == " ":
+            continue
         if ch in VOWEL_TONE:
             b, t = VOWEL_TONE[ch]
             tone_at[len(chars)] = t
             chars.append(b)
-        elif ch == " ":
-            continue
         else:
             chars.append(ch)
+        orig.append(ch)
     base = "".join(chars)
-    out, idx = [], 0
+    parts, idx = [], 0
     for syl in split_syllables(base):
         start, end = idx, idx + len(syl)
         idx = end
         tone = next((tone_at[i] for i in range(start, end) if i in tone_at), 5)
-        out.append(zhuyin_syllable(syl, tone))
-    return " ".join(out)
+        parts.append({
+            "py": "".join(orig[start:end]),
+            "zh": zhuyin_syllable(syl, tone),
+            "tone": tone,
+        })
+    return parts
+
+
+def pinyin_to_zhuyin(py: str) -> str:
+    """Convert a tone-marked pinyin word (maybe several syllables) to Zhuyin."""
+    return " ".join(p["zh"] for p in syllable_parts(py))
 
 
 # --------------------------------------------------------------------------- #
@@ -164,11 +178,14 @@ def parse_vocab(md: str):
         if len(cells) < 5 or not cells[0].isdigit():
             continue
         pinyin = cells[2]
+        parts = syllable_parts(pinyin)
         rows.append({
             "rank": int(cells[0]),
             "word": cells[1],
             "pinyin": pinyin,
-            "zhuyin": pinyin_to_zhuyin(pinyin),
+            "zhuyin": " ".join(p["zh"] for p in parts),
+            "pinyinParts": [{"text": p["py"], "tone": p["tone"]} for p in parts],
+            "zhuyinParts": [{"text": p["zh"], "tone": p["tone"]} for p in parts],
             "meaning": cells[3],
             "example": cells[4],
         })

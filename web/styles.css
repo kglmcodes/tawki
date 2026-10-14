@@ -289,6 +289,17 @@ h2.section { font-size: 15px; margin: 22px 0 8px; color: var(--muted); font-weig
 body.only-zhuyin .pinyin { display: none; }
 body.only-pinyin .zhuyin { display: none; }
 
+/* Tone colours (Mandarin): 1 red, 2 orange, 3 green, 4 blue, neutral grey */
+:root { --t1: #d32f2f; --t2: #e07b00; --t3: #2f7d32; --t4: #1565c0; --t5: #6b7280; }
+@media (prefers-color-scheme: dark) {
+  :root { --t1: #ff8a8a; --t2: #ffc069; --t3: #6ee7a8; --t4: #8ab8ff; --t5: #9aa6b2; }
+}
+.tn.t1 { color: var(--t1); }
+.tn.t2 { color: var(--t2); }
+.tn.t3 { color: var(--t3); }
+.tn.t4 { color: var(--t4); }
+.tn.t5 { color: var(--t5); }
+
 /* Zhuyin reference */
 .zh-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px; }
 .zh-cell {

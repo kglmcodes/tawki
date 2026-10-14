@@ -7,6 +7,18 @@
    "word": "的",
    "pinyin": "de",
    "zhuyin": "˙ㄉㄜ",
+   "pinyinParts": [
+    {
+     "text": "de",
+     "tone": 5
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "˙ㄉㄜ",
+     "tone": 5
+    }
+   ],
    "meaning": "possessive / modifier particle",
    "example": "我的書 (my book)"
   },
@@ -15,6 +27,18 @@
    "word": "是",
    "pinyin": "shì",
    "zhuyin": "ㄕˋ",
+   "pinyinParts": [
+    {
+     "text": "shì",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄕˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "to be",
    "example": "我是學生 (I am a student)"
   },
@@ -23,6 +47,18 @@
    "word": "不",
    "pinyin": "bù",
    "zhuyin": "ㄅㄨˋ",
+   "pinyinParts": [
+    {
+     "text": "bù",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄅㄨˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "not",
    "example": "我不知道 (I don't know)"
   },
@@ -31,6 +67,18 @@
    "word": "了",
    "pinyin": "le",
    "zhuyin": "˙ㄌㄜ",
+   "pinyinParts": [
+    {
+     "text": "le",
+     "tone": 5
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "˙ㄌㄜ",
+     "tone": 5
+    }
+   ],
    "meaning": "completed-action / change particle",
    "example": "他走了 (he left)"
   },
@@ -39,6 +87,18 @@
    "word": "在",
    "pinyin": "zài",
    "zhuyin": "ㄗㄞˋ",
+   "pinyinParts": [
+    {
+     "text": "zài",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄗㄞˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "at, in, on; to be located",
    "example": "我在家 (I'm at home)"
   },
@@ -47,6 +107,18 @@
    "word": "一",
    "pinyin": "yī",
    "zhuyin": "ㄧ",
+   "pinyinParts": [
+    {
+     "text": "yī",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄧ",
+     "tone": 1
+    }
+   ],
    "meaning": "one",
    "example": "一個 (one item)"
   },
@@ -55,6 +127,18 @@
    "word": "人",
    "pinyin": "rén",
    "zhuyin": "ㄖㄣˊ",
+   "pinyinParts": [
+    {
+     "text": "rén",
+     "tone": 2
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄖㄣˊ",
+     "tone": 2
+    }
+   ],
    "meaning": "person, people",
    "example": "很多人 (many people)"
   },
@@ -63,6 +147,18 @@
    "word": "有",
    "pinyin": "yǒu",
    "zhuyin": "ㄧㄡˇ",
+   "pinyinParts": [
+    {
+     "text": "yǒu",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄧㄡˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "to have; there is",
    "example": "我有時間 (I have time)"
   },
@@ -71,6 +167,18 @@
    "word": "我",
    "pinyin": "wǒ",
    "zhuyin": "ㄨㄛˇ",
+   "pinyinParts": [
+    {
+     "text": "wǒ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄨㄛˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "I, me",
    "example": "我很好 (I'm fine)"
   },
@@ -79,6 +187,18 @@
    "word": "你",
    "pinyin": "nǐ",
    "zhuyin": "ㄋㄧˇ",
+   "pinyinParts": [
+    {
+     "text": "nǐ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄋㄧˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "you",
    "example": "你好 (hello)"
   },
@@ -87,6 +207,18 @@
    "word": "他",
    "pinyin": "tā",
    "zhuyin": "ㄊㄚ",
+   "pinyinParts": [
+    {
+     "text": "tā",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄊㄚ",
+     "tone": 1
+    }
+   ],
    "meaning": "he, him",
    "example": "他是誰? (who is he?)"
   },
@@ -95,6 +227,18 @@
    "word": "她",
    "pinyin": "tā",
    "zhuyin": "ㄊㄚ",
+   "pinyinParts": [
+    {
+     "text": "tā",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄊㄚ",
+     "tone": 1
+    }
+   ],
    "meaning": "she, her",
    "example": "她很漂亮 (she is pretty)"
   },
@@ -103,6 +247,18 @@
    "word": "這",
    "pinyin": "zhè",
    "zhuyin": "ㄓㄜˋ",
+   "pinyinParts": [
+    {
+     "text": "zhè",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄓㄜˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "this",
    "example": "這是什麼? (what is this?)"
   },
@@ -111,6 +267,18 @@
    "word": "那",
    "pinyin": "nà",
    "zhuyin": "ㄋㄚˋ",
+   "pinyinParts": [
+    {
+     "text": "nà",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄋㄚˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "that",
    "example": "那很好 (that's good)"
   },
@@ -119,6 +287,18 @@
    "word": "個",
    "pinyin": "gè",
    "zhuyin": "ㄍㄜˋ",
+   "pinyinParts": [
+    {
+     "text": "gè",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄍㄜˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "general measure word",
    "example": "一個人 (one person)"
   },
@@ -127,6 +307,18 @@
    "word": "們",
    "pinyin": "men",
    "zhuyin": "˙ㄇㄣ",
+   "pinyinParts": [
+    {
+     "text": "men",
+     "tone": 5
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "˙ㄇㄣ",
+     "tone": 5
+    }
+   ],
    "meaning": "plural marker (people)",
    "example": "我們 (we)"
   },
@@ -135,6 +327,26 @@
    "word": "什麼",
    "pinyin": "shénme",
    "zhuyin": "ㄕㄣˊ ˙ㄇㄜ",
+   "pinyinParts": [
+    {
+     "text": "shén",
+     "tone": 2
+    },
+    {
+     "text": "me",
+     "tone": 5
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄕㄣˊ",
+     "tone": 2
+    },
+    {
+     "text": "˙ㄇㄜ",
+     "tone": 5
+    }
+   ],
    "meaning": "what",
    "example": "你在做什麼? (what are you doing?)"
   },
@@ -143,6 +355,18 @@
    "word": "都",
    "pinyin": "dōu",
    "zhuyin": "ㄉㄡ",
+   "pinyinParts": [
+    {
+     "text": "dōu",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄉㄡ",
+     "tone": 1
+    }
+   ],
    "meaning": "all, both",
    "example": "我們都去 (we all go)"
   },
@@ -151,6 +375,18 @@
    "word": "也",
    "pinyin": "yě",
    "zhuyin": "ㄧㄝˇ",
+   "pinyinParts": [
+    {
+     "text": "yě",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄧㄝˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "also, too",
    "example": "我也要 (I want it too)"
   },
@@ -159,6 +395,18 @@
    "word": "就",
    "pinyin": "jiù",
    "zhuyin": "ㄐㄧㄡˋ",
+   "pinyinParts": [
+    {
+     "text": "jiù",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄐㄧㄡˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "then, right away; just",
    "example": "我馬上就來 (I'll come right away)"
   },
@@ -167,6 +415,18 @@
    "word": "說",
    "pinyin": "shuō",
    "zhuyin": "ㄕㄨㄛ",
+   "pinyinParts": [
+    {
+     "text": "shuō",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄕㄨㄛ",
+     "tone": 1
+    }
+   ],
    "meaning": "to say, speak",
    "example": "你說什麼? (what did you say?)"
   },
@@ -175,6 +435,18 @@
    "word": "和",
    "pinyin": "hé",
    "zhuyin": "ㄏㄜˊ",
+   "pinyinParts": [
+    {
+     "text": "hé",
+     "tone": 2
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄏㄜˊ",
+     "tone": 2
+    }
+   ],
    "meaning": "and, with",
    "example": "你和他 (you and him)"
   },
@@ -183,6 +455,18 @@
    "word": "會",
    "pinyin": "huì",
    "zhuyin": "ㄏㄨㄟˋ",
+   "pinyinParts": [
+    {
+     "text": "huì",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄏㄨㄟˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "can; will",
    "example": "我會說中文 (I can speak Chinese)"
   },
@@ -191,6 +475,18 @@
    "word": "要",
    "pinyin": "yào",
    "zhuyin": "ㄧㄠˋ",
+   "pinyinParts": [
+    {
+     "text": "yào",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄧㄠˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "to want; will",
    "example": "我要這個 (I want this)"
   },
@@ -199,6 +495,18 @@
    "word": "到",
    "pinyin": "dào",
    "zhuyin": "ㄉㄠˋ",
+   "pinyinParts": [
+    {
+     "text": "dào",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄉㄠˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "to arrive; to, until",
    "example": "我到家了 (I got home)"
   },
@@ -207,6 +515,18 @@
    "word": "去",
    "pinyin": "qù",
    "zhuyin": "ㄑㄩˋ",
+   "pinyinParts": [
+    {
+     "text": "qù",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄑㄩˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "to go",
    "example": "你去哪裡? (where are you going?)"
   },
@@ -215,6 +535,18 @@
    "word": "來",
    "pinyin": "lái",
    "zhuyin": "ㄌㄞˊ",
+   "pinyinParts": [
+    {
+     "text": "lái",
+     "tone": 2
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄌㄞˊ",
+     "tone": 2
+    }
+   ],
    "meaning": "to come",
    "example": "請過來 (please come over)"
   },
@@ -223,6 +555,18 @@
    "word": "看",
    "pinyin": "kàn",
    "zhuyin": "ㄎㄢˋ",
+   "pinyinParts": [
+    {
+     "text": "kàn",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄎㄢˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "to look, watch, read",
    "example": "我在看書 (I'm reading)"
   },
@@ -231,6 +575,18 @@
    "word": "想",
    "pinyin": "xiǎng",
    "zhuyin": "ㄒㄧㄤˇ",
+   "pinyinParts": [
+    {
+     "text": "xiǎng",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄒㄧㄤˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "to think; to want",
    "example": "我想去 (I want to go)"
   },
@@ -239,6 +595,26 @@
    "word": "知道",
    "pinyin": "zhīdào",
    "zhuyin": "ㄓ ㄉㄠˋ",
+   "pinyinParts": [
+    {
+     "text": "zhī",
+     "tone": 1
+    },
+    {
+     "text": "dào",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄓ",
+     "tone": 1
+    },
+    {
+     "text": "ㄉㄠˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "to know",
    "example": "我知道 (I know)"
   },
@@ -247,6 +623,26 @@
    "word": "可以",
    "pinyin": "kěyǐ",
    "zhuyin": "ㄎㄜˇ ㄧˇ",
+   "pinyinParts": [
+    {
+     "text": "kě",
+     "tone": 3
+    },
+    {
+     "text": "yǐ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄎㄜˇ",
+     "tone": 3
+    },
+    {
+     "text": "ㄧˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "can, may",
    "example": "可以嗎? (is that OK?)"
   },
@@ -255,6 +651,18 @@
    "word": "好",
    "pinyin": "hǎo",
    "zhuyin": "ㄏㄠˇ",
+   "pinyinParts": [
+    {
+     "text": "hǎo",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄏㄠˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "good; OK",
    "example": "好的 (OK)"
   },
@@ -263,6 +671,18 @@
    "word": "很",
    "pinyin": "hěn",
    "zhuyin": "ㄏㄣˇ",
+   "pinyinParts": [
+    {
+     "text": "hěn",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄏㄣˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "very",
    "example": "很好 (very good)"
   },
@@ -271,6 +691,18 @@
    "word": "大",
    "pinyin": "dà",
    "zhuyin": "ㄉㄚˋ",
+   "pinyinParts": [
+    {
+     "text": "dà",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄉㄚˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "big",
    "example": "很大 (very big)"
   },
@@ -279,6 +711,18 @@
    "word": "小",
    "pinyin": "xiǎo",
    "zhuyin": "ㄒㄧㄠˇ",
+   "pinyinParts": [
+    {
+     "text": "xiǎo",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄒㄧㄠˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "small",
    "example": "很小 (very small)"
   },
@@ -287,6 +731,18 @@
    "word": "多",
    "pinyin": "duō",
    "zhuyin": "ㄉㄨㄛ",
+   "pinyinParts": [
+    {
+     "text": "duō",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄉㄨㄛ",
+     "tone": 1
+    }
+   ],
    "meaning": "many, much",
    "example": "多少錢? (how much money?)"
   },
@@ -295,6 +751,18 @@
    "word": "少",
    "pinyin": "shǎo",
    "zhuyin": "ㄕㄠˇ",
+   "pinyinParts": [
+    {
+     "text": "shǎo",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄕㄠˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "few, little",
    "example": "很少 (very few)"
   },
@@ -303,6 +771,26 @@
    "word": "沒有",
    "pinyin": "méiyǒu",
    "zhuyin": "ㄇㄟˊ ㄧㄡˇ",
+   "pinyinParts": [
+    {
+     "text": "méi",
+     "tone": 2
+    },
+    {
+     "text": "yǒu",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄇㄟˊ",
+     "tone": 2
+    },
+    {
+     "text": "ㄧㄡˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "not have; there is not",
    "example": "我沒有錢 (I have no money)"
   },
@@ -311,6 +799,26 @@
    "word": "因為",
    "pinyin": "yīnwèi",
    "zhuyin": "ㄧㄣ ㄨㄟˋ",
+   "pinyinParts": [
+    {
+     "text": "yīn",
+     "tone": 1
+    },
+    {
+     "text": "wèi",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄧㄣ",
+     "tone": 1
+    },
+    {
+     "text": "ㄨㄟˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "because",
    "example": "因為下雨 (because it's raining)"
   },
@@ -319,6 +827,26 @@
    "word": "所以",
    "pinyin": "suǒyǐ",
    "zhuyin": "ㄙㄨㄛˇ ㄧˇ",
+   "pinyinParts": [
+    {
+     "text": "suǒ",
+     "tone": 3
+    },
+    {
+     "text": "yǐ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄙㄨㄛˇ",
+     "tone": 3
+    },
+    {
+     "text": "ㄧˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "therefore, so",
    "example": "所以我不去 (so I'm not going)"
   },
@@ -327,6 +855,26 @@
    "word": "但是",
    "pinyin": "dànshì",
    "zhuyin": "ㄉㄢˋ ㄕˋ",
+   "pinyinParts": [
+    {
+     "text": "dàn",
+     "tone": 4
+    },
+    {
+     "text": "shì",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄉㄢˋ",
+     "tone": 4
+    },
+    {
+     "text": "ㄕˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "but, however",
    "example": "但是太貴了 (but it's too expensive)"
   },
@@ -335,6 +883,26 @@
    "word": "如果",
    "pinyin": "rúguǒ",
    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ",
+   "pinyinParts": [
+    {
+     "text": "rú",
+     "tone": 2
+    },
+    {
+     "text": "guǒ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄖㄨˊ",
+     "tone": 2
+    },
+    {
+     "text": "ㄍㄨㄛˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "if",
    "example": "如果你來 (if you come)"
   },
@@ -343,6 +911,26 @@
    "word": "時候",
    "pinyin": "shíhòu",
    "zhuyin": "ㄕˊ ㄏㄡˋ",
+   "pinyinParts": [
+    {
+     "text": "shí",
+     "tone": 2
+    },
+    {
+     "text": "hòu",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄕˊ",
+     "tone": 2
+    },
+    {
+     "text": "ㄏㄡˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "time, moment",
    "example": "什麼時候? (when?)"
   },
@@ -351,6 +939,26 @@
    "word": "現在",
    "pinyin": "xiànzài",
    "zhuyin": "ㄒㄧㄢˋ ㄗㄞˋ",
+   "pinyinParts": [
+    {
+     "text": "xiàn",
+     "tone": 4
+    },
+    {
+     "text": "zài",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄒㄧㄢˋ",
+     "tone": 4
+    },
+    {
+     "text": "ㄗㄞˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "now",
    "example": "我現在很忙 (I'm busy now)"
   },
@@ -359,6 +967,18 @@
    "word": "誰",
    "pinyin": "shéi",
    "zhuyin": "ㄕㄟˊ",
+   "pinyinParts": [
+    {
+     "text": "shéi",
+     "tone": 2
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄕㄟˊ",
+     "tone": 2
+    }
+   ],
    "meaning": "who",
    "example": "他是誰? (who is he?)"
   },
@@ -367,6 +987,26 @@
    "word": "哪裡",
    "pinyin": "nǎlǐ",
    "zhuyin": "ㄋㄚˇ ㄌㄧˇ",
+   "pinyinParts": [
+    {
+     "text": "nǎ",
+     "tone": 3
+    },
+    {
+     "text": "lǐ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄋㄚˇ",
+     "tone": 3
+    },
+    {
+     "text": "ㄌㄧˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "where",
    "example": "你在哪裡? (where are you?)"
   },
@@ -375,6 +1015,26 @@
    "word": "怎麼",
    "pinyin": "zěnme",
    "zhuyin": "ㄗㄣˇ ˙ㄇㄜ",
+   "pinyinParts": [
+    {
+     "text": "zěn",
+     "tone": 3
+    },
+    {
+     "text": "me",
+     "tone": 5
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄗㄣˇ",
+     "tone": 3
+    },
+    {
+     "text": "˙ㄇㄜ",
+     "tone": 5
+    }
+   ],
    "meaning": "how",
    "example": "怎麼去? (how do I go?)"
   },
@@ -383,6 +1043,34 @@
    "word": "為什麼",
    "pinyin": "wèishénme",
    "zhuyin": "ㄨㄟˋ ㄕㄣˊ ˙ㄇㄜ",
+   "pinyinParts": [
+    {
+     "text": "wèi",
+     "tone": 4
+    },
+    {
+     "text": "shén",
+     "tone": 2
+    },
+    {
+     "text": "me",
+     "tone": 5
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄨㄟˋ",
+     "tone": 4
+    },
+    {
+     "text": "ㄕㄣˊ",
+     "tone": 2
+    },
+    {
+     "text": "˙ㄇㄜ",
+     "tone": 5
+    }
+   ],
    "meaning": "why",
    "example": "為什麼? (why?)"
   },
@@ -391,6 +1079,18 @@
    "word": "幾",
    "pinyin": "jǐ",
    "zhuyin": "ㄐㄧˇ",
+   "pinyinParts": [
+    {
+     "text": "jǐ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄐㄧˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "how many; several",
    "example": "幾個人? (how many people?)"
   },
@@ -399,6 +1099,18 @@
    "word": "給",
    "pinyin": "gěi",
    "zhuyin": "ㄍㄟˇ",
+   "pinyinParts": [
+    {
+     "text": "gěi",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄍㄟˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "to give",
    "example": "給我 (give me)"
   },
@@ -407,6 +1119,18 @@
    "word": "讓",
    "pinyin": "ràng",
    "zhuyin": "ㄖㄤˋ",
+   "pinyinParts": [
+    {
+     "text": "ràng",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄖㄤˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "to let, allow",
    "example": "讓我看看 (let me see)"
   },
@@ -415,6 +1139,18 @@
    "word": "把",
    "pinyin": "bǎ",
    "zhuyin": "ㄅㄚˇ",
+   "pinyinParts": [
+    {
+     "text": "bǎ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄅㄚˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "object marker (disposal)",
    "example": "把書給我 (give me the book)"
   },
@@ -423,6 +1159,18 @@
    "word": "被",
    "pinyin": "bèi",
    "zhuyin": "ㄅㄟˋ",
+   "pinyinParts": [
+    {
+     "text": "bèi",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄅㄟˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "by (passive marker)",
    "example": "被他看到 (seen by him)"
   },
@@ -431,6 +1179,18 @@
    "word": "跟",
    "pinyin": "gēn",
    "zhuyin": "ㄍㄣ",
+   "pinyinParts": [
+    {
+     "text": "gēn",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄍㄣ",
+     "tone": 1
+    }
+   ],
    "meaning": "with; to follow",
    "example": "我跟他去 (I go with him)"
   },
@@ -439,6 +1199,18 @@
    "word": "從",
    "pinyin": "cóng",
    "zhuyin": "ㄘㄨㄥˊ",
+   "pinyinParts": [
+    {
+     "text": "cóng",
+     "tone": 2
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄘㄨㄥˊ",
+     "tone": 2
+    }
+   ],
    "meaning": "from",
    "example": "從台北來 (come from Taipei)"
   },
@@ -447,6 +1219,26 @@
    "word": "已經",
    "pinyin": "yǐjīng",
    "zhuyin": "ㄧˇ ㄐㄧㄥ",
+   "pinyinParts": [
+    {
+     "text": "yǐ",
+     "tone": 3
+    },
+    {
+     "text": "jīng",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄧˇ",
+     "tone": 3
+    },
+    {
+     "text": "ㄐㄧㄥ",
+     "tone": 1
+    }
+   ],
    "meaning": "already",
    "example": "我已經吃了 (I already ate)"
   },
@@ -455,6 +1247,18 @@
    "word": "還",
    "pinyin": "hái",
    "zhuyin": "ㄏㄞˊ",
+   "pinyinParts": [
+    {
+     "text": "hái",
+     "tone": 2
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄏㄞˊ",
+     "tone": 2
+    }
+   ],
    "meaning": "still, yet",
    "example": "還沒 (not yet)"
   },
@@ -463,6 +1267,18 @@
    "word": "再",
    "pinyin": "zài",
    "zhuyin": "ㄗㄞˋ",
+   "pinyinParts": [
+    {
+     "text": "zài",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄗㄞˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "again",
    "example": "再見 (goodbye)"
   },
@@ -471,6 +1287,26 @@
    "word": "一點",
    "pinyin": "yīdiǎn",
    "zhuyin": "ㄧ ㄉㄧㄢˇ",
+   "pinyinParts": [
+    {
+     "text": "yī",
+     "tone": 1
+    },
+    {
+     "text": "diǎn",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄧ",
+     "tone": 1
+    },
+    {
+     "text": "ㄉㄧㄢˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "a little",
    "example": "一點點 (just a little)"
   },
@@ -479,6 +1315,26 @@
    "word": "非常",
    "pinyin": "fēicháng",
    "zhuyin": "ㄈㄟ ㄔㄤˊ",
+   "pinyinParts": [
+    {
+     "text": "fēi",
+     "tone": 1
+    },
+    {
+     "text": "cháng",
+     "tone": 2
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄈㄟ",
+     "tone": 1
+    },
+    {
+     "text": "ㄔㄤˊ",
+     "tone": 2
+    }
+   ],
    "meaning": "very, extremely",
    "example": "非常好 (excellent)"
   },
@@ -487,6 +1343,26 @@
    "word": "今天",
    "pinyin": "jīntiān",
    "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ",
+   "pinyinParts": [
+    {
+     "text": "jīn",
+     "tone": 1
+    },
+    {
+     "text": "tiān",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄐㄧㄣ",
+     "tone": 1
+    },
+    {
+     "text": "ㄊㄧㄢ",
+     "tone": 1
+    }
+   ],
    "meaning": "today",
    "example": "今天很熱 (it's hot today)"
   },
@@ -495,6 +1371,26 @@
    "word": "明天",
    "pinyin": "míngtiān",
    "zhuyin": "ㄇㄧㄥˊ ㄊㄧㄢ",
+   "pinyinParts": [
+    {
+     "text": "míng",
+     "tone": 2
+    },
+    {
+     "text": "tiān",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄇㄧㄥˊ",
+     "tone": 2
+    },
+    {
+     "text": "ㄊㄧㄢ",
+     "tone": 1
+    }
+   ],
    "meaning": "tomorrow",
    "example": "明天見 (see you tomorrow)"
   },
@@ -503,6 +1399,26 @@
    "word": "昨天",
    "pinyin": "zuótiān",
    "zhuyin": "ㄗㄨㄛˊ ㄊㄧㄢ",
+   "pinyinParts": [
+    {
+     "text": "zuó",
+     "tone": 2
+    },
+    {
+     "text": "tiān",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄗㄨㄛˊ",
+     "tone": 2
+    },
+    {
+     "text": "ㄊㄧㄢ",
+     "tone": 1
+    }
+   ],
    "meaning": "yesterday",
    "example": "昨天我去了 (I went yesterday)"
   },
@@ -511,6 +1427,26 @@
    "word": "時間",
    "pinyin": "shíjiān",
    "zhuyin": "ㄕˊ ㄐㄧㄢ",
+   "pinyinParts": [
+    {
+     "text": "shí",
+     "tone": 2
+    },
+    {
+     "text": "jiān",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄕˊ",
+     "tone": 2
+    },
+    {
+     "text": "ㄐㄧㄢ",
+     "tone": 1
+    }
+   ],
    "meaning": "time",
    "example": "沒有時間 (no time)"
   },
@@ -519,6 +1455,26 @@
    "word": "工作",
    "pinyin": "gōngzuò",
    "zhuyin": "ㄍㄨㄥ ㄗㄨㄛˋ",
+   "pinyinParts": [
+    {
+     "text": "gōng",
+     "tone": 1
+    },
+    {
+     "text": "zuò",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄍㄨㄥ",
+     "tone": 1
+    },
+    {
+     "text": "ㄗㄨㄛˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "work, job",
    "example": "我在工作 (I'm working)"
   },
@@ -527,6 +1483,26 @@
    "word": "朋友",
    "pinyin": "péngyǒu",
    "zhuyin": "ㄆㄥˊ ㄧㄡˇ",
+   "pinyinParts": [
+    {
+     "text": "péng",
+     "tone": 2
+    },
+    {
+     "text": "yǒu",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄆㄥˊ",
+     "tone": 2
+    },
+    {
+     "text": "ㄧㄡˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "friend",
    "example": "我的朋友 (my friend)"
   },
@@ -535,6 +1511,18 @@
    "word": "請",
    "pinyin": "qǐng",
    "zhuyin": "ㄑㄧㄥˇ",
+   "pinyinParts": [
+    {
+     "text": "qǐng",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄑㄧㄥˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "please; to invite",
    "example": "請進 (please come in)"
   },
@@ -543,6 +1531,26 @@
    "word": "謝謝",
    "pinyin": "xièxie",
    "zhuyin": "ㄒㄧㄝˋ ˙ㄒㄧㄝ",
+   "pinyinParts": [
+    {
+     "text": "xiè",
+     "tone": 4
+    },
+    {
+     "text": "xie",
+     "tone": 5
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄒㄧㄝˋ",
+     "tone": 4
+    },
+    {
+     "text": "˙ㄒㄧㄝ",
+     "tone": 5
+    }
+   ],
    "meaning": "thanks",
    "example": "謝謝你 (thank you)"
   },
@@ -551,6 +1559,34 @@
    "word": "對不起",
    "pinyin": "duìbuqǐ",
    "zhuyin": "ㄉㄨㄟˋ ˙ㄅㄨ ㄑㄧˇ",
+   "pinyinParts": [
+    {
+     "text": "duì",
+     "tone": 4
+    },
+    {
+     "text": "bu",
+     "tone": 5
+    },
+    {
+     "text": "qǐ",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄉㄨㄟˋ",
+     "tone": 4
+    },
+    {
+     "text": "˙ㄅㄨ",
+     "tone": 5
+    },
+    {
+     "text": "ㄑㄧˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "sorry",
    "example": "對不起 (sorry)"
   },
@@ -559,6 +1595,26 @@
    "word": "天氣",
    "pinyin": "tiānqì",
    "zhuyin": "ㄊㄧㄢ ㄑㄧˋ",
+   "pinyinParts": [
+    {
+     "text": "tiān",
+     "tone": 1
+    },
+    {
+     "text": "qì",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄊㄧㄢ",
+     "tone": 1
+    },
+    {
+     "text": "ㄑㄧˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "weather",
    "example": "天氣很好 (the weather is nice)"
   },
@@ -567,6 +1623,18 @@
    "word": "吃",
    "pinyin": "chī",
    "zhuyin": "ㄔ",
+   "pinyinParts": [
+    {
+     "text": "chī",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄔ",
+     "tone": 1
+    }
+   ],
    "meaning": "to eat",
    "example": "吃飯 (eat a meal)"
   },
@@ -575,6 +1643,18 @@
    "word": "喝",
    "pinyin": "hē",
    "zhuyin": "ㄏㄜ",
+   "pinyinParts": [
+    {
+     "text": "hē",
+     "tone": 1
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄏㄜ",
+     "tone": 1
+    }
+   ],
    "meaning": "to drink",
    "example": "喝水 (drink water)"
   },
@@ -583,6 +1663,18 @@
    "word": "買",
    "pinyin": "mǎi",
    "zhuyin": "ㄇㄞˇ",
+   "pinyinParts": [
+    {
+     "text": "mǎi",
+     "tone": 3
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄇㄞˇ",
+     "tone": 3
+    }
+   ],
    "meaning": "to buy",
    "example": "我要買 (I want to buy)"
   },
@@ -591,6 +1683,18 @@
    "word": "錢",
    "pinyin": "qián",
    "zhuyin": "ㄑㄧㄢˊ",
+   "pinyinParts": [
+    {
+     "text": "qián",
+     "tone": 2
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄑㄧㄢˊ",
+     "tone": 2
+    }
+   ],
    "meaning": "money",
    "example": "多少錢? (how much?)"
   },
@@ -599,6 +1703,26 @@
    "word": "比較",
    "pinyin": "bǐjiào",
    "zhuyin": "ㄅㄧˇ ㄐㄧㄠˋ",
+   "pinyinParts": [
+    {
+     "text": "bǐ",
+     "tone": 3
+    },
+    {
+     "text": "jiào",
+     "tone": 4
+    }
+   ],
+   "zhuyinParts": [
+    {
+     "text": "ㄅㄧˇ",
+     "tone": 3
+    },
+    {
+     "text": "ㄐㄧㄠˋ",
+     "tone": 4
+    }
+   ],
    "meaning": "relatively; to compare",
    "example": "比較好 (better)"
   }

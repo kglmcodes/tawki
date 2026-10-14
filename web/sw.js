@@ -2,7 +2,7 @@
    Navigations and JSON are network-first (so updates land when online),
    static assets are cache-first (fast, and available offline). */
 
-const VERSION = "tawki-v1";
+const VERSION = "tawki-v2";
 const SHELL = [
   "./",
   "./index.html",

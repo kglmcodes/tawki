@@ -37,6 +37,10 @@ const isCJK = (s) => /[\u3400-\u9FFF\uF900-\uFAFF]/.test(s);
 const wordClass = (w) => "word" + (isCJK(w) ? " word-cjk" : "");
 const zhPart = (s) => String(s || "").split(/[(（]/)[0].trim();
 const cap = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
+const toneHTML = (parts, sep) =>
+  Array.isArray(parts) && parts.length
+    ? parts.map((p) => `<span class="tn t${p.tone}">${esc(p.text)}</span>`).join(sep)
+    : "";
 
 /* ---------- persistence ---------- */
 function load(lang) {
@@ -214,8 +218,8 @@ function vocabCard(v) {
     <span class="rank">${v.rank}</span>
     <div class="vocab-main">
       <div><span class="${wordClass(v.word)}">${esc(v.word)}</span>
-        <span class="zhuyin">${esc(v.zhuyin)}</span>
-        <span class="pinyin">${esc(v.pinyin)}</span></div>
+        <span class="zhuyin">${toneHTML(v.zhuyinParts, " ") || esc(v.zhuyin)}</span>
+        <span class="pinyin">${toneHTML(v.pinyinParts, "") || esc(v.pinyin)}</span></div>
       <div>${esc(v.meaning)}</div>
       <div class="example">${esc(v.example)}</div>
       <div class="speakbar"></div>
@@ -315,16 +319,16 @@ function renderPractice() {
   } else {
     $("#front-main").className = "card-word" + (isCJK(front) ? " card-cjk" : "");
     $("#front-main").textContent = front;
-    $("#front-sub").textContent = card.pinyin;
+    $("#front-sub").innerHTML = toneHTML(card.pinyinParts, "") || esc(card.pinyin);
     $("#front-hint").textContent = "tap to reveal";
   }
   fillSpeakbar($("#front-speak"), [{ text: card.word, label: "Word" }]);
-  $("#front-zhuyin").textContent = card.zhuyin;
+  $("#front-zhuyin").innerHTML = toneHTML(card.zhuyinParts, " ") || esc(card.zhuyin);
   $("#front-hint").hidden = quiz;
 
   $("#back-word").textContent = card.word;
-  $("#back-zhuyin").textContent = card.zhuyin;
-  $("#back-pinyin").textContent = card.pinyin;
+  $("#back-zhuyin").innerHTML = toneHTML(card.zhuyinParts, " ") || esc(card.zhuyin);
+  $("#back-pinyin").innerHTML = toneHTML(card.pinyinParts, "") || esc(card.pinyin);
   $("#back-meaning").textContent = card.meaning;
   $("#back-example").textContent = card.example;
   fillSpeakbar($("#back-speak"), [

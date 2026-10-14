@@ -71,6 +71,8 @@ Screens:
 
 **Zhuyin (注音符號 / Bopomofo).** Taiwan's phonetic system, shown beside every word. It is derived from the pinyin in `vocab-frequency.md` by `scripts/build_data.py` (a pinyin-to-Zhuyin converter), so it never has to be typed by hand and stays correct as the list grows. The top-bar switch picks **Zhuyin + Pinyin**, **Zhuyin**, or **Pinyin**. Reference: `zh-tw/zhuyin.md`.
 
+**Tone colours.** Both the pinyin and the Zhuyin are coloured by tone — 1st red, 2nd orange, 3rd green, 4th blue, neutral grey — from per-syllable tone data emitted by the build script.
+
 **Spaced repetition.** Words are scheduled on a Leitner ladder (boxes 0-5, from 10 minutes to 35 days). Grading moves the box and sets the next due date; a word counts as "known" from box 3. The default scope, **Due**, serves words that are new or due.
 
 **Pronunciation.** Word and example-sentence audio use the browser's speech synthesis (a `zh-TW` voice); nothing is downloaded. With no Chinese voice on the device, the buttons are inert.
